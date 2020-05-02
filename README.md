@@ -1,3 +1,5 @@
+**The GitHub repository is just a mirror. The [original code](https://gitlab.com/akutschi/dokugo/) is maintained at [GitLab](https://gitlab.com/)**
+
 # DoKugo
 
 A simple theme for technical documentation purposes.
