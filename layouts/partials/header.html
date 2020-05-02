@@ -1,0 +1,9 @@
+<div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-end">
+    {{ range .Site.Menus.main }} 
+      {{ $text := print .Name | safeHTML }}
+      <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+    {{ end }}
+    </nav>
+  </div>
+  

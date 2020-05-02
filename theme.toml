@@ -1,0 +1,11 @@
+name = "DoKugo"
+license = "GPLv3"
+licenselink = "https://gitlab.com/akutschi/dokugo/blob/master/LICENSE"
+description = ""
+homepage = "https://akutschi.gitlab.io/dokugo"
+tags = []
+features = []
+min_version = "0.69"
+
+[author]
+  name = "akutschi"
