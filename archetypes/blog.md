@@ -1,7 +1,9 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-tags:
+categories:
     - blog
+tags:
+    - news
 draft: true
 ---
