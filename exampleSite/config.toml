@@ -7,10 +7,11 @@ theme = "dokugo"
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
 
 [params]
   homeText = "No eye candy!"
-  dateFormat = "Jan 2, 2006"
+  dateFormat = "2006-01-02"
 
 [markup]
   [markup.highlight]
@@ -36,7 +37,12 @@ theme = "dokugo"
     url = "/blog/"
     weight = 2
   [[menu.main]]
+    name = "Categories"
+    pre = "book"
+    url = "/categories/"
+    weight = 3
+  [[menu.main]]
     name = "Tags"
     pre = "tag"
     url = "/tags/"
-    weight = 3
+    weight = 4
