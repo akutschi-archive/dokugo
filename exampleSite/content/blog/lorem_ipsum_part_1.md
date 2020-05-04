@@ -1,8 +1,10 @@
 ---
 title: "Lorem Ipsum, Part 1"
 date: 2020-04-01T11:11:11-11:00
-tags:
+categories:
     - blog
+tags:
+    - news
 draft: false
 ---
 
