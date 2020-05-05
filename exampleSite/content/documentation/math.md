@@ -8,9 +8,6 @@ tags:
 draft: false
 ---
 
-
-## Test
-
 This formula \\(E-mc^2\\) is from Einstein.
 
 
@@ -43,11 +40,3 @@ $$
 =\underbrace{-\oint_{S}\rho\underline{v}\cdot\underline{n}dS}_{\text{Net inflow of mass}}
 $$
 
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
