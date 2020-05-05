@@ -23,26 +23,24 @@ theme = "dokugo"
     ordered = false
     startLevel = 2
 
-# See https://feathericons.com/
-# The value of pre is the icon name
 [menu]
   [[menu.main]]
     name = "Home"
-    pre = "home"
     url = "/"
     weight = 1
   [[menu.main]]
     name = "Blog"
-    pre = "edit"
     url = "/blog/"
     weight = 2
-  [[menu.main]]
-    name = "Categories"
-    pre = "book"
-    url = "/categories/"
+   [[menu.main]]
+    name = "Documentation"
+    url = "/documentation/"
     weight = 3
   [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
+    name = "Categories"
+    url = "/categories/"
     weight = 4
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 5
