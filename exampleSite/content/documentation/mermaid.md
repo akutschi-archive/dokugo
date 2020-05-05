@@ -1,10 +1,13 @@
 ---
-title: "Mermaid"
-date: 2020-04-01T11:11:13-11:00
+author: DoKugo
+title: Mermaid diagrams
+description: A brief guide to use Mermaid
+date: 2019-03-08
 categories:
     - documentation
 tags:
     - mermaid
+    - markdown
 draft: false
 ---
 

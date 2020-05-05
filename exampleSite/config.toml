@@ -2,7 +2,7 @@ baseURL = "https://akutschi.gitlab.io/dokugo/"
 languageCode = "en-us"
 title = "DoKugo"
 theme = "dokugo"
-
+enableEmoji = true  
 
 
 [taxonomies]
