@@ -6,7 +6,8 @@ A simple theme for technical documentation purposes.
 
 # Features
 
-TBD
+- $LaTeX$ with MathJax
+- Mermaid - generation of diagrams and flowcharts
 
 # Getting started
 
