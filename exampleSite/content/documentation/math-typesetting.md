@@ -18,7 +18,7 @@ In this example we will be using [MathJax](https://mathjax.org/)
 
 ## Examples
 
-Inline math: $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
+Inline math: %$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… %$
 
 Block math:
 
