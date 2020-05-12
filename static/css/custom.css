@@ -31,3 +31,9 @@ blockquote {
     background-color: lightgray;
     padding-left: 1em;
 }
+
+h2 {
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    display: block;
+}
