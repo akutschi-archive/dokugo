@@ -1,0 +1,13 @@
+{{ $child_pages := union .Sections .Pages }}
+
+<ul>
+    {{ range $child_pages.ByTitle }}
+        <li>
+            <a href="{{.Permalink}}">{{ .Title }}
+                {{ if or (.Sections) (.Pages) }}
+                {{ end }}
+            </a>
+            {{ partial "content-tree-recursive.html" . }}
+        </li>
+    {{ end }}
+</ul>

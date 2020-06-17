@@ -1,1 +1,15 @@
-<!--placeholder-->
+<div>
+    <ul>
+{{ with .Site.GetPage "documentation" }}
+        {{ range .Sections.ByTitle }}
+            {{/* We don't want a menu item for specific pages listed here */}}
+            {{ if (and (ne .Title "Posts") (ne .Title "Test Page")) }}
+                <li>
+                    <a href="{{.Permalink}}">{{ .Title }}</a>
+                    {{ partial "content-tree-recursive.html" . }}
+                </li>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    </ul>
+</div>
