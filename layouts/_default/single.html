@@ -4,23 +4,20 @@
     <div class="col-2">
         {{ partial "content-tree.html" . }}
     </div>
-    <div class="col-7">
+    <div class="col-10">
         <h1>{{ .Title }}</h1>
         {{ partial "date-and-tags.html" . }}
-    </div>
-</div>
-<div class="row">
-    <div class="col-2">
-      <!-- Placeholder-->
-    </div>
-    <div class="col-7">
-        <br><br>
-        {{ .Content }}
-    </div>
-    <div class="col-3">
-        <br><br>
-        <div class="sticky-top">
-        {{ .TableOfContents }}
+        <div class="row">
+            <div class="col-9">
+                <br><br>
+                {{ .Content }}
+            </div>
+            <div class="col-3">
+                <br><br>
+                <div class="sticky-top">
+                {{ .TableOfContents }}
+                </div>
+            </div>
         </div>
     </div>
 </div>
