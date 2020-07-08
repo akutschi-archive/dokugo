@@ -62,11 +62,24 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
     Bob | 27
   Alice | 23
 
+The following table is realized by the shortcode `{{</* table "table table-striped table-bordered" */>}}`. The classes listed in the shortcode are the default classes applied on tables.
+
+{{<table>}}
+| 1st element | 2nd element | 3rd element | 4th element |
+| :---------- | :---------- | :---------- | :---------- |
+| 5 < 4 = inv | 4 < 3 = inv | 3 < 2 = inv | 2 < 1 = inv |
+| 5 < 3 = inv | 4 < 2 = inv | 3 < 1 = inv |             |
+| 5 < 2 = inv | 4 < 1 = inv |             |             |
+| 5 < 1 = inv |             |             |             |
+{{</table>}}
+
 #### Inline Markdown within tables
 
+{{<table>}}
 | Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Table      |
 | ---------- | --------- | ----------------- | ---------- |
 | *italics*  | **bold**  | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code`     |
+{{</table>}}
 
 ## Code Blocks
 
@@ -128,8 +141,11 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 #### Nested list
 
 * Item
-1. First Sub-item
-2. Second Sub-item
+  1. First Sub-item
+  2. Second Sub-item
+      * First Sub-sub-item
+        * Sub-sub-sub-item
+      * Second Sub-sub-item
 
 ## Other Elements — abbr, sub, sup, kbd, mark
 
