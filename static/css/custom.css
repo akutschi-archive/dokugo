@@ -53,3 +53,14 @@ blockquote {
     color: grey;
     font-size: 75%
 }
+
+#ContentTree ul {
+    list-style-type: none;
+    padding: 0px 5px 0px 10px;
+
+}
+
+#TContentTree ul li a {
+    color: grey;
+    font-size: 75%
+}
