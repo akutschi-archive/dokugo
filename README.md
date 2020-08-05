@@ -4,6 +4,8 @@
 
 A simple theme for technical documentation purposes.
 
+> Latest features and changes can be found in the `development` branch.
+
 # Features
 
 - LaTeX with MathJax
