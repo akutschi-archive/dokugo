@@ -11,16 +11,22 @@ tags:
 draft: false
 ---
 
-Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
+Mathematical notation in a Hugo project can be enabled by using the third party JavaScript library MathJax.
 <!--more-->
 
-In this example we will be using [MathJax](https://mathjax.org/)
+In the following examples we will be using [MathJax](https://mathjax.org/)
 
 ## Examples
 
+Inline math starts and ends with `%$`:
+
+```plaintext
+Inline math: %$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… %$
+```
+
 Inline math: %$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… %$
 
-Block math:
+Block math on the other hand starts and ends with `$$`:
 
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
