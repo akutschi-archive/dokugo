@@ -64,3 +64,8 @@ blockquote {
     color: grey;
     font-size: 75%
 }
+
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+}
