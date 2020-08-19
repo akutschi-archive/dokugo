@@ -10,6 +10,8 @@ A simple theme for technical documentation purposes.
 
 - LaTeX with MathJax
 - Mermaid - generation of diagrams and flowcharts
+- Breadcrumbs
+- Table of Contents for articles
 
 # Getting started
 
