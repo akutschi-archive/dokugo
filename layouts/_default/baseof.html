@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="en">
   {{ partial "head.html" . }}
-  <body>
-    <div class="container-fluid">
-    {{ partial "header.html" . }}
+  <body class="d-flex flex-column">
+    <div id="page-content">
+      <div class="container-fluid">
+        {{ partial "header.html" . }}
+      </div>
+      <div class="container-fluid">
+        <main id="main">
+          {{ block "main" . }}{{ end }}
+        </main>
+      </div>
     </div>
-    <div class="container-fluid">
-      <main id="main">
-       {{ block "main" . }}{{ end }}
-      </main>
-    </div>
+    {{ partial "footer.html" . }}
     {{ partial "script.html" . }}
   </body>
 </html>
