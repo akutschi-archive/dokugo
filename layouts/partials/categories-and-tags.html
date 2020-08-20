@@ -1,0 +1,11 @@
+
+  {{ range $.Params.categories }}
+  {{ $href := print (absURL "categories/") (urlize .) }}
+  <a class="btn btn-sm btn-outline-info tag-btn" href="{{ $href }}">{{ . }}</a>
+  {{ end }}
+  <br>
+  {{ range $.Params.tags }}
+  {{ $href := print (absURL "tags/") (urlize .) }}
+  <a class="btn btn-sm btn-outline-success tag-btn" href="{{ $href }}">{{ . }}</a>
+  {{ end }}
+

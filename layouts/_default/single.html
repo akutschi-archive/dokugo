@@ -4,7 +4,9 @@
     <div class="col-10">
         {{ partial "breadcrumb.html" . }}
         <h1>{{ .Title }}</h1>
-        {{ partial "date-and-tags.html" . }}
+        {{ .PublishDate.Format "2006-01-02" }}
+        </br>
+        {{ partial "categories-and-tags.html" . }}
         <div class="row">
             <div class="col-9">
                 <br><br>
