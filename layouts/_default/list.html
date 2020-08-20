@@ -1,12 +1,28 @@
 {{ define "main" }}
 {{ partial "breadcrumb.html" . }}
+
 <h1>{{ .Title }}</h1>
+
+<div class="row row-cols-1 row-cols-md-2">
+  
+
 {{ range .Pages.ByPublishDate.Reverse }}
-<p>
-  <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
-  <br>
-  {{ partial "date-and-tags.html" . }}
-</p>
+<div class="col mb-4">
+<div class="card">
+  <h5 class="card-header"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+  <div class="card-body">
+    <p>{{ partial "categories-and-tags.html" . }}</p>
+    <p class="card-text">{{ .Summary | truncate 200}}</p>
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">Published on {{ .PublishDate.Format "2006-01-02" }}</small>
+  </div>
+</div>
+</div>
 {{ end }}
 
+  
+</div>
+
 {{ end }}
+
