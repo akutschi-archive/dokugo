@@ -1,3 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
 #nav a {
     font-weight: bold;
     color: inherit;
@@ -54,18 +67,96 @@ blockquote {
     font-size: 75%
 }
 
-#ContentTree ul {
-    list-style-type: none;
-    padding: 0px 5px 0px 10px;
-
-}
-
-#ContentTree ul li a {
-    color: grey;
-    font-size: 75%
-}
-
 .breadcrumb {
     background-color: transparent;
     padding-left: 0;
 }
+
+
+.site-footer
+{
+  background-color:#f2f2f2;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer h6
+{
+  font-size:16px;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+
+.footer-links a
+{
+  color:#737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover
+{
+  color:#3366cc;
+}
+
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:10%;
+  background-color:lightgray;
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons a{
+  background-color:gray;
+  color:#818a91;
+  font-size:22px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover
+{
+  color:white;
+  background-color:darkgrey;
+}
+
+
