@@ -5,7 +5,7 @@
     {{ partial "breadcrumb.html" . }}
     <h1>{{ .Title }}</h1>
     <div class="row row-cols-1 row-cols-md-2">
-      {{ range .Pages.ByPublishDate.Reverse }}
+      {{ range .Pages.ByParam "categories_weight" }}
       <div class="col mb-4">
         <div class="card">
           <h5 class="card-header"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
