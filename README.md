@@ -52,7 +52,7 @@ and then
 
 ```
 cd exampleSite
-hugo --themesDir ../../
+hugo server --themesDir ../../
 ```
 
 Browse site on http://localhost:1313
