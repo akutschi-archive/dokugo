@@ -3,6 +3,7 @@ title: "Subfolder 1, Lorem Ipsum, Part 3"
 date: 2020-04-01T11:11:13-11:00
 categories:
     - documentation
+categories_weight: 0
 tags:
     - demo content
 draft: false

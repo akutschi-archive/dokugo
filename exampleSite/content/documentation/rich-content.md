@@ -5,6 +5,7 @@ description: A brief description of Hugo Shortcodes
 date: 2019-03-10
 categories:
     - documentation
+categories_weight: 0
 tags:
     - shortcodes
     - privacy

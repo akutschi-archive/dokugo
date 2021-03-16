@@ -5,6 +5,7 @@ description: Guide to emoji usage in Hugo
 date: 2019-03-22
 categories:
     - documentation
+categories_weight: 0
 tags:
     - markdown
     - emoji
