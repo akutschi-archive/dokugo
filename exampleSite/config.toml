@@ -41,15 +41,12 @@ enableEmoji = true
     name = "Blog"
     url = "/blog/"
     weight = 2
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
    [[menu.main]]
     name = "Documentation"
     url = "/documentation/"
-    weight = 3
-  [[menu.main]]
-    name = "Categories"
-    url = "/categories/"
     weight = 4
-  [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 5
+  

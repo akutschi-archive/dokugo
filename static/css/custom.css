@@ -67,6 +67,11 @@ blockquote {
     font-size: 75%
 }
 
+#TableOfContents ul li a.active {
+  color: black;
+  font-size: 75%
+}
+
 .breadcrumb {
     background-color: transparent;
     padding-left: 0;
