@@ -165,3 +165,55 @@ blockquote {
 }
 
 
+
+@media (prefers-color-scheme: dark) {
+  
+  html,
+  body {
+    background-color: #000000;
+    color: lightgray;
+  }
+
+  img {
+    filter: brightness(.8) contrast(1.2);
+  }
+  
+  h2 {
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      display: block;
+  }
+  
+  blockquote {
+      background: #2e2e2e;
+  }
+
+  #TableOfContents ul li a {
+      color: grey;
+  }
+  
+  #TableOfContents ul li a.active {
+    color: white;
+  }
+    
+  .site-footer
+  {
+    background-color:#1b1b1b;
+    color:#737373;
+  }
+  
+  .footer-links a
+  {
+    color:#737373
+  }
+  
+  .site-footer .social-icons a
+  {
+    background-color:#272727;
+  }
+  
+  .social-icons a{
+    color:#818a91;
+  }
+  
+}

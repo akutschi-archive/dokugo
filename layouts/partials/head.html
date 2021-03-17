@@ -12,10 +12,8 @@
   <link rel="manifest" href="{{ $manifest }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  {{ $cssdark := "css/custom-dark.css" | absURL }}
-  <link rel="stylesheet" href="{{ $cssdark }}"  media="(prefers-color-scheme: dark)">
   {{ $css := "css/custom.css" | absURL }}
-  <link rel="stylesheet" href="{{ $css }}" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+  <link rel="stylesheet" href="{{ $css }}">
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
