@@ -24,7 +24,7 @@ enableEmoji = true
 
 [markup]
   [markup.highlight]
-    lineNos = true
+    lineNos = false
     lineNumbersInTable = true
     style = "friendly"
   [markup.tableOfContents]
