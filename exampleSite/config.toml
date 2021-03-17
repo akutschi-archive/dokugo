@@ -1,4 +1,4 @@
-baseURL = "https://akutschi.gitlab.io/dokugo/"
+baseURL = "/"
 languageCode = "en-us"
 title = "DoKugo"
 theme = "dokugo"
