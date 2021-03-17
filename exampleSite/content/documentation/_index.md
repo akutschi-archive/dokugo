@@ -1,3 +1,3 @@
 ---
-title: Documentation content
+title: Documentation
 ---

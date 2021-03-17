@@ -1,3 +1,3 @@
 ---
-title: List of projects
+title: Projects
 ---
