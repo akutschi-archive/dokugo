@@ -142,7 +142,7 @@ blockquote {
   background-color:darkgrey;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
  
   html,
   body {
