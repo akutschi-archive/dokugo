@@ -12,59 +12,63 @@ body {
 }
 
 #nav a {
-    font-weight: bold;
-    color: inherit;
+  font-weight: bold;
+  color: inherit;
 }
+
 #nav-border {
     border-bottom: 1px solid #212529;
 }
+
 #main {
-    margin-top: 1em;
-    margin-bottom: 4em;
+  margin-top: 1em;
+  margin-bottom: 4em;
 }
+
 #home-jumbotron {
-    background-color: inherit;
+  background-color: inherit;
 }
+
 .font-125 {
-    font-size: 125%;
+  font-size: 125%;
 }
+
 .tagpage-space {
-    margin: 0.3em;
+  margin: 0.3em;
 }
+
 .tag-btn {
-    margin-bottom: 0.3em;
+  margin-bottom: 0.3em;
 }
+
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
 }
 
 h2 {
-    border-bottom: 1px solid lightgray;
-    width: 100%;
-    display: block;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  display: block;
 }
 
 blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-    margin: 1.5em 0 1.5em 10px ;
-    padding: 0.5em 10px;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 0 1.5em 10px ;
+  padding: 0.5em 10px;
 }
 
-
-
 #TableOfContents ul {
-    list-style-type: none;
-    padding: 0px 5px 0px 10px;
-
+  list-style-type: none;
+  padding: 0px 5px 0px 10px;
 }
 
 #TableOfContents ul li a {
-    color: grey;
-    font-size: 75%
+  color: grey;
+  font-size: 75%
 }
 
 #TableOfContents ul li a.active {
@@ -73,10 +77,9 @@ blockquote {
 }
 
 .breadcrumb {
-    background-color: transparent;
-    padding-left: 0;
+  background-color: transparent;
+  padding-left: 0;
 }
-
 
 .site-footer
 {
@@ -97,34 +100,12 @@ blockquote {
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
 }
 
 .footer-links a
 {
   color:#737373
-}
-
-.footer-links a:active,
-.footer-links a:focus,
-.footer-links a:hover
-{
-  color:#3366cc;
-}
-
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:10%;
-  background-color:lightgray;
 }
 
 .social-icons
@@ -140,34 +121,29 @@ blockquote {
   margin-bottom:4px
 }
 
-.social-icons a{
-  background-color:gray;
+.social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:10%;
+  background-color:lightgray;
   color:#818a91;
-  font-size:22px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
   text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
+  display:inline-block;
+  font-size:22px;
 }
 
-.social-icons a:active,
-.social-icons a:focus,
 .social-icons a:hover
 {
   color:white;
   background-color:darkgrey;
 }
 
-
-
-@media (prefers-color-scheme: dark) {
-  
+@media (prefers-color-scheme: light) {
+ 
   html,
   body {
     background-color: #000000;
@@ -177,23 +153,54 @@ blockquote {
   img {
     filter: brightness(.8) contrast(1.2);
   }
-  
+
   table,tr,th {
     color: white;
   }
 
-  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-    background-color: #161616;
- }
+  .btn {
+    background-color: #1b1b1b;
+    color: lightgray;
+  }
 
+  .card {
+    background-color: #1b1b1b;
+  }
+
+  .card-header {
+    background-color: #111111;
+  }
+
+  .card-footer {
+    background-color: #111111;
+  }
+  
+  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #252525;
+  }
+
+  .table-striped > tbody > tr:nth-child(2n+1):hover > td, .table-striped > tbody > tr:nth-child(2n+1):hover > th > td {
+    background-color: #363636;
+    color: lightgray
+  }
+
+  .table-striped > tbody > tr:nth-child(2n):hover > td, .table-striped > tbody > tr:nth-child(2n):hover > th > td {
+    background-color: #363636;
+    color: lightgray;
+  }
+
+  #nav-border {
+    border-bottom: 1px solid #212529;
+  }
+  
   h2 {
-      border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
   }
   
   blockquote {
-      background: #2e2e2e;
+    background: #2e2e2e;
   }
-
+  
   #TableOfContents ul li a {
       color: grey;
   }
@@ -201,25 +208,32 @@ blockquote {
   #TableOfContents ul li a.active {
     color: white;
   }
-    
+  
   .site-footer
   {
     background-color:#1b1b1b;
     color:#737373;
   }
-  
+
+  footer hr{
+    background-color: black;
+  }
+
   .footer-links a
   {
     color:#737373
   }
   
-  .site-footer .social-icons a
+  .social-icons a
   {
-    background-color:#272727;
+    background-color:#2e2e2e;
+    color:#818a91;
   }
   
-  .social-icons a{
-    color:#818a91;
+  .social-icons a:hover
+  {
+    color:white;
+    background-color:darkgrey;
   }
   
 }
