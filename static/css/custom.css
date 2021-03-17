@@ -178,10 +178,16 @@ blockquote {
     filter: brightness(.8) contrast(1.2);
   }
   
+  table,tr,th {
+    color: white;
+  }
+
+  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #161616;
+ }
+
   h2 {
       border-bottom: 1px solid lightgray;
-      width: 100%;
-      display: block;
   }
   
   blockquote {
