@@ -142,7 +142,7 @@ blockquote {
   background-color:darkgrey;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
  
   html,
   body {
@@ -168,15 +168,15 @@ blockquote {
   }
 
   .card {
-    background-color: #1b1b1b;
+    background-color: #202020;
   }
 
   .card-header {
-    background-color: #111111;
+    background-color: #1b1b1b;
   }
 
   .card-footer {
-    background-color: #111111;
+    background-color: #1b1b1b;
   }
   
   .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
