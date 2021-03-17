@@ -2,17 +2,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {{ hugo.Generator }}
-  {{ $favapp := "favicon/apple-touch-icon.png" | relURL }}
+  {{ $favapp := "favicon/apple-touch-icon.png" | absURL }}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ $favapp }}">
-  {{ $fav32 := "favicon/favicon-32x32.png" | relURL }}
+  {{ $fav32 := "favicon/favicon-32x32.png" | absURL }}
   <link rel="icon" type="image/png" sizes="32x32" href="{{ $fav32 }}">
-  {{ $fav16 := "favicon/favicon-16x16.png" | relURL }}
+  {{ $fav16 := "favicon/favicon-16x16.png" | absURL }}
   <link rel="icon" type="image/png" sizes="16x16" href="{{ $fav16 }}">
-  {{ $manifest := "favicon/site.webmanifest" | relURL }}
+  {{ $manifest := "favicon/site.webmanifest" | absURL }}
   <link rel="manifest" href="{{ $manifest }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  {{ $css := "css/custom.css" | relURL }}
+  {{ $css := "css/custom.css" | absURL }}
   <link rel="stylesheet" href="{{ $css }}">
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
