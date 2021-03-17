@@ -10,11 +10,11 @@
         <div class="card">
           <h5 class="card-header"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
           <div class="card-body">
-            <p>{{ partial "categories-and-tags.html" . }}</p>
+            {{ if .PublishDate }}<p>{{ partial "categories-and-tags.html" . }}</p>{{ end }}
             <p class="card-text">{{ .Summary | truncate 200}}</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Published on {{ .PublishDate.Format "2006-01-02" }}</small>
+            <small class="text-muted">{{ if .PublishDate }}Published on {{ .PublishDate.Format "2006-01-02" }}{{ else }} Folder {{ end }}</small>
           </div>
         </div>
       </div>
