@@ -150,50 +150,56 @@ blockquote {
  
   html,
   body {
-    background-color: #121212;
-    color: #a9a9a9;
+    background-color: #0d1117;
+    color: #c9d1d9;
   }
 
   .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
+  a, 
+  a:hover
+  {
+    color:#58a6e2
+  }
+
   img {
     filter: brightness(.8) contrast(1.2);
   }
 
-  table,tr,th {
-    color: #a9a9a9;
+  table,
+  tr,
+  th {
+    color: #c9d1d9;
   }
-  light
+  
   .btn {
-    color: #a9a9a9;
+    color: #c9d1d9;
   }
 
   .card {
-    background-color: #363636;
+    background-color: #252e3b
   }
 
   .card-header {
-    background-color: #252525;
+    background-color: #21262d;
   }
 
   .card-footer {
-    background-color: #252525;
+    background-color: #21262d;
   }
   
   .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-    background-color: #252525;
+    background-color: #252e3b;
   }
 
-  .table-striped > tbody > tr:nth-child(2n+1):hover > td, .table-striped > tbody > tr:nth-child(2n+1):hover > th > td {
-    background-color: #363636;
-    color: #d3d3d3
-  }
-
-  .table-striped > tbody > tr:nth-child(2n):hover > td, .table-striped > tbody > tr:nth-child(2n):hover > th > td {
-    background-color: #363636;
-    color: #d3d3d3;
+  .table-striped > tbody > tr:nth-child(2n+1):hover > td, 
+  .table-striped > tbody > tr:nth-child(2n+1):hover > th > td, 
+  .table-striped > tbody > tr:nth-child(2n):hover > td, 
+  .table-striped > tbody > tr:nth-child(2n):hover > th > td {
+    background-color: #21262d;
+    color: #c9d1d9
   }
 
   #nav-border {
@@ -201,46 +207,47 @@ blockquote {
   }
   
   h2 {
-    border-bottom: 1px solid #a9a9a9;
+    border-bottom: 1px solid #c9d1d9;
   }
   
   blockquote {
-    background: #2e2e2e;
+    background: #252e3b;
+    border-left: 10px solid #58a6e2;
   }
   
   #TableOfContents ul li a {
-      color: #808080;
+      color: #8b949e;
   }
   
   #TableOfContents ul li a.active {
-    color: lightgray;
+    color: #c9d1d9;
   }
   
   .site-footer
   {
-    background-color:#1b1b1b;
-    color:#737373;
+    background-color:#161b22;
+    color:#8b949e;
   }
 
   footer hr{
-    background-color: #000000;
+    background-color: #0d1117;
   }
 
   .footer-links a
   {
-    color:#737373
+    color:#8b949e
   }
   
   .social-icons a
   {
-    background-color:#2e2e2e;
-    color:#737373;
+    background-color:#252e3b;
+    color:#8b949e;
   }
   
   .social-icons a:hover
   {
-    background-color:#808080;
-    color:#d3d3d3;
+    background-color:#8b949e;
+    color:#252e3b;
 
   }
   
