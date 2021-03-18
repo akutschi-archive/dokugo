@@ -63,7 +63,7 @@ main h4 {
 
 main h5, 
 main h6 {
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 blockquote {
