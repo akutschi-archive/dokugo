@@ -17,7 +17,7 @@ body {
 }
 
 #nav-border {
-    border-bottom: 1px solid #212529;
+    border-bottom: 1px solid #252525;
 }
 
 #main {
@@ -49,14 +49,14 @@ img {
 }
 
 h2 {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #d3d3d3;
   width: 100%;
   display: block;
 }
 
 blockquote {
   background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  border-left: 10px solid #cccccc;
   margin: 1.5em 0 1.5em 10px ;
   padding: 0.5em 10px;
 }
@@ -67,12 +67,12 @@ blockquote {
 }
 
 #TableOfContents ul li a {
-  color: grey;
+  color: #808080;
   font-size: 75%
 }
 
 #TableOfContents ul li a.active {
-  color: black;
+  color: #000000;
   font-size: 75%
 }
 
@@ -129,7 +129,7 @@ blockquote {
   margin-left:6px;
   margin-right:0;
   border-radius:10%;
-  background-color:lightgray;
+  background-color:#d3d3d3;
   color:#818a91;
   text-align:center;
   display:inline-block;
@@ -138,16 +138,20 @@ blockquote {
 
 .social-icons a:hover
 {
-  color:white;
-  background-color:darkgrey;
+  color:#ffffff;
+  background-color:#a9a9a9;
 }
 
-@media (prefers-color-scheme: dark) {
+/* ######################################################################## */
+/* Dark Color Scheme                                                        */
+/* ######################################################################## */
+
+@media (prefers-color-scheme: light) {
  
   html,
   body {
-    background-color: #000000;
-    color: lightgray;
+    background-color: #121212;
+    color: #a9a9a9;
   }
 
   .navbar-light .navbar-toggler-icon {
@@ -159,24 +163,23 @@ blockquote {
   }
 
   table,tr,th {
-    color: white;
+    color: #a9a9a9;
   }
-
+  light
   .btn {
-    background-color: #1b1b1b;
-    color: lightgray;
+    color: #a9a9a9;
   }
 
   .card {
-    background-color: #202020;
+    background-color: #363636;
   }
 
   .card-header {
-    background-color: #1b1b1b;
+    background-color: #252525;
   }
 
   .card-footer {
-    background-color: #1b1b1b;
+    background-color: #252525;
   }
   
   .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
@@ -185,20 +188,20 @@ blockquote {
 
   .table-striped > tbody > tr:nth-child(2n+1):hover > td, .table-striped > tbody > tr:nth-child(2n+1):hover > th > td {
     background-color: #363636;
-    color: lightgray
+    color: #d3d3d3
   }
 
   .table-striped > tbody > tr:nth-child(2n):hover > td, .table-striped > tbody > tr:nth-child(2n):hover > th > td {
     background-color: #363636;
-    color: lightgray;
+    color: #d3d3d3;
   }
 
   #nav-border {
-    border-bottom: 1px solid #212529;
+    border-bottom: 1px solid #252525;
   }
   
   h2 {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #a9a9a9;
   }
   
   blockquote {
@@ -206,11 +209,11 @@ blockquote {
   }
   
   #TableOfContents ul li a {
-      color: grey;
+      color: #808080;
   }
   
   #TableOfContents ul li a.active {
-    color: white;
+    color: lightgray;
   }
   
   .site-footer
@@ -220,7 +223,7 @@ blockquote {
   }
 
   footer hr{
-    background-color: black;
+    background-color: #000000;
   }
 
   .footer-links a
@@ -231,13 +234,14 @@ blockquote {
   .social-icons a
   {
     background-color:#2e2e2e;
-    color:#818a91;
+    color:#737373;
   }
   
   .social-icons a:hover
   {
-    color:white;
-    background-color:darkgrey;
+    background-color:#808080;
+    color:#d3d3d3;
+
   }
   
 }
