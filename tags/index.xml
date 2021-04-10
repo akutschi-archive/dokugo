@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on DoKugo</title>
+    <link>https://akutschi.gitlab.io/dokugo/tags/</link>
+    <description>Recent content in Tags on DoKugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Apr 2020 11:11:13 -1100</lastBuildDate><atom:link href="https://akutschi.gitlab.io/dokugo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>demo content</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/demo-content/</link>
+      <pubDate>Wed, 01 Apr 2020 11:11:13 -1100</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/demo-content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>news</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/news/</link>
+      <pubDate>Wed, 01 Apr 2020 11:11:13 -1100</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emoji</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/emoji/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/emoji/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/markdown/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/text/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/privacy/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/shortcodes/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/math/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mermaid</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/mermaid/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/mermaid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/css/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/html/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://akutschi.gitlab.io/dokugo/tags/themes/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.gitlab.io/dokugo/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
