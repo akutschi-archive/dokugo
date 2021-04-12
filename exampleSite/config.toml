@@ -14,10 +14,7 @@ enableEmoji = true
   dateFormat = "2006-01-02"
 
 [params.footer]
-  footerText = "This is a very simple and clean theme for documentation purposes. Main goal is a layout that does not distract the reader and can be navigated easily."
-  copyrightyear = "2019-2020"
-  copyrightlink = "https://gitlab.com" 
-  copyrightname = "akutschi"  
+  footerText = "This is a very simple and clean theme for documentation purposes. Main goal is a layout that does not distract the reader and can be navigated easily."  
   github = "https://github.com/akutschi/dokugo"
   gitlab = ""
   # This line enables (true) or disables (false) the "Powered by Hugo. Theme DoKugo." line.
