@@ -1,4 +1,4 @@
-baseURL = "https://akutschi.gitlab.io/dokugo/"
+baseURL = "https://akutschi.github.io/dokugo/"
 languageCode = "en-us"
 title = "DoKugo"
 theme = "dokugo"
@@ -14,13 +14,12 @@ enableEmoji = true
   dateFormat = "2006-01-02"
 
 [params.footer]
-  footerText = "This page is primarily a private page and contains the documentation for various projects. The blog and the documentation are more or less notepads to write down things and to explain them to myself."
+  footerText = "This is a very simple and clean theme for documentation purposes. Main goal is a layout that does not distract the reader and can be navigated easily."
   copyrightyear = "2019-2020"
   copyrightlink = "https://gitlab.com" 
   copyrightname = "akutschi"  
   github = "https://github.com/akutschi/dokugo"
-  gitlab = "https://gitlab.com/akutschi/dokugo"
-
+  gitlab = ""
 
 [markup]
   [markup.highlight]
