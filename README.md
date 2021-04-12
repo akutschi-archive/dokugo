@@ -14,36 +14,9 @@ A simple theme for technical documentation purposes.
 - Breadcrumbs
 - Table of Contents for articles
 
-# Getting started
+# Preview theme with exampleSite content
 
-## Requirement
-
-Hugo minimum version: `0.69`
-
-## Download
-
-With git installed you can simply clone this repository into your themes folder:
-
-```
-cd themes
-git clone git@github.com:akutschi/dokugo.git
-```
-
-For more information read [the Hugo documentation](https://gohugo.io/themes/installing-and-using-themes/).
-
-## Configure
-
-You may specify options in your config file config.toml or config.yaml/config.json of your site to make use of this theme's features. At least choose this theme in your config file.
-
-```
-theme: "dokugo"
-```
-
-An example of a config file can be found in the `exampleSite` directory.
-
-## Preview theme with exampleSite content
-
-To test this theme just clone this repository with
+If you want to test this theme just clone this repository with
 
 ```
 git clone git@github.com:akutschi/dokugo.git
@@ -56,9 +29,44 @@ cd exampleSite
 hugo server --themesDir ../../
 ```
 
-Browse site on http://localhost:1313
+Browse site on http://localhost:1313.
+Or just visit https://akutschi.github.io/dokugo.
 
-# Contribution 
+# Quick Start
+
+## Requirement
+
+Hugo minimum version: `0.69`
+
+## Download
+
+Assuming that you created a new site with `hugo new site <sitename>` and `git` is installed. 
+We simply clone this repository into your themes folder:
+
+```
+hugo new site <sitename>
+cd <sitename>
+git init
+git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
+```
+
+Now we have created a new Hugo site, initialized a git repository and added the theme to our site.
+
+For more information read [the Hugo documentation](https://gohugo.io/getting-started/quick-start/).
+
+## Configure
+
+You may specify options in your config file `config.toml` or `config.yaml`/`config.json` of your site to make use of this theme's features. 
+At least choose this theme in your config file.
+
+```
+theme: "dokugo"
+```
+
+An example of a config file can be found in the `exampleSite` directory. 
+Just copy the content or even the whole file into the root directory of your site.
+
+# Contributions 
 
 Problems? Feature requests? Improvements? 
 
