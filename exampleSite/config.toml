@@ -10,7 +10,7 @@ enableEmoji = true
   category = "categories"
 
 [params]
-  homeText = "No eye candy!"
+  homeText = "Simplicity!"
   dateFormat = "2006-01-02"
 
 [params.footer]
