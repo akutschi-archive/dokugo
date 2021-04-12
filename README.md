@@ -57,12 +57,10 @@ Browse site on http://localhost:1313
 
 # License
 
-DoKugo is licensed under the [GPLv3 license](https://gitlab.com/akutschi/dokugo/blob/master/LICENSE).
+DoKugo is licensed under the [GPLv3 license](https://github.com/akutschi/dokugo/blob/master/LICENSE).
 
 # Author
 
-[akutschi](https://gitlab.com/akutschi)
+[akutschi](https://github.com/akutschi)
 
-Copyright (c) 2020 akutschi
-
-
+Copyright (c) 2021 akutschi
