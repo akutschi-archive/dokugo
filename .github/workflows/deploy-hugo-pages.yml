@@ -1,9 +1,10 @@
-name: github pages
+name: deploy hugo pages
 
 on:
   push:
     branches:
-      - master
+      - '!master'
+      - '*'
 
 jobs:
   deploy:
@@ -24,10 +25,5 @@ jobs:
         run: |
           cd exampleSite
           hugo --themesDir ../../
-          mv public ../
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+
