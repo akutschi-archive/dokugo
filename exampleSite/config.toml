@@ -20,6 +20,8 @@ enableEmoji = true
   copyrightname = "akutschi"  
   github = "https://github.com/akutschi/dokugo"
   gitlab = ""
+  # This line enables (true) or disables (false) the "Powered by Hugo. Theme DoKugo." line.
+  poweredByLine = true 
 
 [markup]
   [markup.highlight]

@@ -102,6 +102,15 @@ blockquote {
   color:#737373;
 }
 
+.poweredby-footer
+{
+  background-color:#ebebeb;
+  padding:10px 0px 0px 0px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
 .site-footer h6
 {
   font-size:16px;
@@ -238,6 +247,12 @@ blockquote {
   .site-footer
   {
     background-color:#161b22;
+    color:#8b949e;
+  }
+
+  .poweredby-footer
+  {
+    background-color:#0d1117;
     color:#8b949e;
   }
 
