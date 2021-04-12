@@ -35,7 +35,6 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <!--<p class="footer-links" >Copyright &copy; {{ .Site.Params.Footer.copyrightyear }} <a href="{{ .Site.Params.Footer.copyrightlink }}">{{ .Site.Params.Footer.copyrightname }}</a></p>-->
           <ul class="social-icons text-left">
             <li><a class="" href="http://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i></a></li>
             <li><a class="" href="http://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></li>
@@ -45,10 +44,21 @@
 
         <div class="col-md-6 col-sm-6 col-xs-12">
           <ul class="social-icons text-right">
-            <li><a class="" href="{{ .Site.Params.Footer.github }}"><i class="fab fa-github"></i></a></li>
-            <li><a class="" href="{{ .Site.Params.Footer.gitlab }}"><i class="fab fa-gitlab"></i></a></li>   
+            {{ if .Site.Params.Footer.github }}<li><a class="" href="{{ .Site.Params.Footer.github }}"><i class="fab fa-github"></i></a></li>{{ end }}
+            {{ if .Site.Params.Footer.gitlab }}<li><a class="" href="{{ .Site.Params.Footer.gitlab }}"><i class="fab fa-gitlab"></i></a></li>{{ end }}
           </ul>
         </div>
       </div>
     </div>
 </footer>
+
+{{ if .Site.Params.Footer.poweredByLine }}
+<div class="poweredby-footer">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="row justify-content-center">
+        <p class="footer-links">Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://akutschi.github.io/dokugo">DoKugo</a>.</p>
+      </div>
+    </div>
+  </div>
+{{ end }}
