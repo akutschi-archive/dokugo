@@ -6,7 +6,16 @@
     <description>Recent content in markdown on DoKugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Emoji Support</title>
       <link>https://akutschi.github.io/dokugo/documentation/emoji-support/</link>

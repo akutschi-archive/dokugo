@@ -6,7 +6,43 @@
     <description>Recent content in Categories on DoKugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2020 11:11:13 -1100</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>documentation</title>
+      <link>https://akutschi.github.io/dokugo/categories/documentation/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/categories/documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://akutschi.github.io/dokugo/categories/hugo/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>installation</title>
+      <link>https://akutschi.github.io/dokugo/categories/installation/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/categories/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://akutschi.github.io/dokugo/categories/themes/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/categories/themes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>blog</title>
       <link>https://akutschi.github.io/dokugo/categories/blog/</link>
@@ -17,29 +53,11 @@
     </item>
     
     <item>
-      <title>documentation</title>
-      <link>https://akutschi.github.io/dokugo/categories/documentation/</link>
-      <pubDate>Wed, 01 Apr 2020 11:11:13 -1100</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/categories/documentation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>syntax</title>
       <link>https://akutschi.github.io/dokugo/categories/syntax/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/categories/syntax/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>https://akutschi.github.io/dokugo/categories/themes/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/categories/themes/</guid>
       <description></description>
     </item>
     

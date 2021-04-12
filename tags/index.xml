@@ -6,13 +6,40 @@
     <description>Recent content in Tags on DoKugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2020 11:11:13 -1100</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>demo content</title>
-      <link>https://akutschi.github.io/dokugo/tags/demo-content/</link>
-      <pubDate>Wed, 01 Apr 2020 11:11:13 -1100</pubDate>
+      <title>css</title>
+      <link>https://akutschi.github.io/dokugo/tags/css/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/tags/demo-content/</guid>
+      <guid>https://akutschi.github.io/dokugo/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://akutschi.github.io/dokugo/tags/html/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://akutschi.github.io/dokugo/tags/markdown/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://akutschi.github.io/dokugo/tags/themes/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/tags/themes/</guid>
       <description></description>
     </item>
     
@@ -31,15 +58,6 @@
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/tags/emoji/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://akutschi.github.io/dokugo/tags/markdown/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/tags/markdown/</guid>
       <description></description>
     </item>
     
@@ -85,33 +103,6 @@
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/tags/mermaid/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>css</title>
-      <link>https://akutschi.github.io/dokugo/tags/css/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>html</title>
-      <link>https://akutschi.github.io/dokugo/tags/html/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>https://akutschi.github.io/dokugo/tags/themes/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/tags/themes/</guid>
       <description></description>
     </item>
     

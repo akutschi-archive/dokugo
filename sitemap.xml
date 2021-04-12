@@ -2,34 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://akutschi.github.io/dokugo/categories/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/css/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/documentation/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/categories/documentation/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/html/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/categories/hugo/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/categories/installation/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/markdown/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/themes/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/categories/themes/</loc>
+    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://akutschi.github.io/dokugo/blog/</loc>
     <lastmod>2020-04-01T11:11:13-11:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/categories/blog/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/categories/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/demo-content/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/categories/documentation/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-1/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-2/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-3/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/</loc>
     <lastmod>2020-04-01T11:11:13-11:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/blog/lorem_ipsum_part_3/</loc>
@@ -38,49 +56,16 @@
     <loc>https://akutschi.github.io/dokugo/tags/news/</loc>
     <lastmod>2020-04-01T11:11:13-11:00</lastmod>
   </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-1/lorem_ipsum_part_3/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-2/lorem_ipsum_part_3/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-3/lorem_ipsum_part_3/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/</loc>
-    <lastmod>2020-04-01T11:11:13-11:00</lastmod>
-  </url><url>
     <loc>https://akutschi.github.io/dokugo/blog/lorem_ipsum_part_2/</loc>
     <lastmod>2020-04-01T11:11:12-11:00</lastmod>
   </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-1/lorem_ipsum_part_2/</loc>
-    <lastmod>2020-04-01T11:11:12-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-2/lorem_ipsum_part_2/</loc>
-    <lastmod>2020-04-01T11:11:12-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-3/lorem_ipsum_part_2/</loc>
-    <lastmod>2020-04-01T11:11:12-11:00</lastmod>
-  </url><url>
     <loc>https://akutschi.github.io/dokugo/blog/lorem_ipsum_part_1/</loc>
-    <lastmod>2020-04-01T11:11:11-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-1/lorem_ipsum_part_1/</loc>
-    <lastmod>2020-04-01T11:11:11-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-2/lorem_ipsum_part_1/</loc>
-    <lastmod>2020-04-01T11:11:11-11:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/documentation-subfolder-3/lorem_ipsum_part_1/</loc>
     <lastmod>2020-04-01T11:11:11-11:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/tags/emoji/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/documentation/emoji-support/</loc>
-    <lastmod>2019-03-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/markdown/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/documentation/placeholder-text/</loc>
@@ -110,22 +95,10 @@
     <loc>https://akutschi.github.io/dokugo/documentation/mermaid/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/css/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/html/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://akutschi.github.io/dokugo/documentation/markdown-syntax/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/categories/syntax/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/themes/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/categories/themes/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/projects/</loc>
