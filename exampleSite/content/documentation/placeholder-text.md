@@ -5,7 +5,7 @@ description: Lorem Ipsum Dolor Si Amet
 date: 2019-03-11
 categories:
     - documentation
-categories_weight: 0
+categories_weight: 2
 tags:
     - markdown
     - text

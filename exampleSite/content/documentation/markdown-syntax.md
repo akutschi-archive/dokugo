@@ -7,7 +7,7 @@ categories:
     - documentation
     - themes
     - syntax
-categories_weight: 0
+categories_weight: 2
 tags:
     - markdown
     - css

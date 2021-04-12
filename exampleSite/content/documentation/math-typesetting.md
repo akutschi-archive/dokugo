@@ -5,7 +5,7 @@ description: A brief guide to use MathJax
 date: 2019-03-08
 categories:
     - documentation
-categories_weight: 0
+categories_weight: 2
 tags:
     - math
     - markdown
