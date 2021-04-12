@@ -1,5 +1,4 @@
-name: test hugo pages
-
+name: test
 on:
   push:
     branches:
