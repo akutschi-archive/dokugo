@@ -5,7 +5,7 @@
 
 A simple theme for technical documentation purposes.
 
-![Screenshot](./exampleSite/content/documentation/dokugo/installation/screenshot.png)
+![Screenshot](./exampleSite/content/documentation/dokugo/introduction/screenshot.png)
 
 # Features
 
