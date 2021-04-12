@@ -14,7 +14,7 @@ A simple theme for technical documentation purposes.
 - Breadcrumbs
 - Table of Contents for articles
 
-# Preview theme with exampleSite content
+# Preview Theme with `exampleSite` Content
 
 If you want to test this theme just clone this repository with
 
