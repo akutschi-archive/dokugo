@@ -1,4 +1,4 @@
-name: deploy hugo pages
+name: build & deploy
 
 on:
   push:
