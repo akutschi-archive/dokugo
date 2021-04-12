@@ -1,8 +1,11 @@
 # DoKugo
 
+![build](https://github.com/akutschi/dokugo/actions/workflows/deploy-hugo-pages.yml/badge.svg)
+![license](https://img.shields.io/github/license/akutschi/dokugo)
+
 A simple theme for technical documentation purposes.
 
-> Latest features and changes can be found in the `development` branch.
+![Screenshot](./exampleSite/content/documentation/dokugo/installation/screenshot.png)
 
 # Features
 
@@ -23,7 +26,7 @@ With git installed you can simply clone this repository into your themes folder:
 
 ```
 cd themes
-git clone git@gitlab.com:akutschi/dokugo.git
+git clone git@github.com:akutschi/dokugo.git
 ```
 
 For more information read [the Hugo documentation](https://gohugo.io/themes/installing-and-using-themes/).
@@ -43,7 +46,7 @@ An example of a config file can be found in the `exampleSite` directory.
 To test this theme just clone this repository with
 
 ```
-git clone git@gitlab.com:akutschi/dokugo.git
+git clone git@github.com:akutschi/dokugo.git
 ```
 
 and then
@@ -55,6 +58,15 @@ hugo server --themesDir ../../
 
 Browse site on http://localhost:1313
 
+# Contribution 
+
+Problems? Feature requests? Improvements? 
+
+Probably, since this theme is currently optimized for my own personal use.
+Nevertheless, feel free to open tickets for issues or merge requests. 
+I am willing to discuss and consider every request. 
+Thank you.
+
 # License
 
 DoKugo is licensed under the [GPLv3 license](https://github.com/akutschi/dokugo/blob/master/LICENSE).
@@ -64,3 +76,4 @@ DoKugo is licensed under the [GPLv3 license](https://github.com/akutschi/dokugo/
 [akutschi](https://github.com/akutschi)
 
 Copyright (c) 2021 akutschi
+
