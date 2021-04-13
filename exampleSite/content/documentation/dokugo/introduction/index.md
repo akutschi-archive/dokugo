@@ -30,13 +30,13 @@ A simple theme for technical documentation purposes.
 
 If you want to test this theme just clone this repository with
 
-```
+```bash
 git clone git@github.com:akutschi/dokugo.git
 ```
 
 and then
 
-```
+```bash
 cd exampleSite
 hugo server --themesDir ../../
 ```
@@ -55,7 +55,7 @@ Hugo minimum version: `0.69`
 Assuming that you created a new site with `hugo new site <sitename>` and `git` is installed. 
 We simply clone this repository into your themes folder:
 
-```
+```bash
 hugo new site <sitename>
 cd <sitename>
 git init
@@ -71,7 +71,7 @@ For more information read [the Hugo documentation](https://gohugo.io/getting-sta
 You may specify options in your config file `config.toml` or `config.yaml`/`config.json` of your site to make use of this theme's features. 
 At least choose this theme in your config file.
 
-```
+```bash
 theme: "dokugo"
 ```
 
