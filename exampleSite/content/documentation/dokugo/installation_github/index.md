@@ -15,7 +15,7 @@ tags:
 draft: false
 ---
 
-In principal the same as in the [manual installation and deployment]({{< ref "../installation/index.md" >}}) but we do not run `hugo` manually to create and publish the site.
+In principal the same as in the [manual installation and deployment]({{< ref "../installation/index.md" >}}), but we do not run `hugo` manually to create and publish the site.
 Instead we use [GitHub Actions](https://docs.github.com/en/actions) and publish on [GitHub Pages](https://docs.github.com/en/pages).
 
 ## Requirements
@@ -71,7 +71,7 @@ git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
 ```
 
-With these first command `hugo new site demodokugo` you created a new site with the following directory structure:
+With the first command `hugo new site demodokugo` you created a new site with the following directory structure:
 
 ```bash
 $ tree demodokugo/
@@ -136,10 +136,12 @@ demodokugo/
 It's time now to [configure]({{< ref "../configuration/index.md" >}}) your site.
 
 We go the quick route.
-Just copy and paste the following into your `config.toml` in the root directory of your website:
+Just copy and paste the following into your `config.toml` in the root directory of your website.
+The only required change is the `baseURL`.
+Please, use the username and repository name where the page is stored:
 
 ```yaml
-baseURL = "https://www.example.com"
+baseURL = "https://username.github.io/repository"
 languageCode = "en-us"
 title = "DemoDoKugo"
 theme = "dokugo"
@@ -295,7 +297,7 @@ git push -u origin main
 ```
 
 The last step will send everything to the GitHub repository.
-When go to GitHub and open `Actions` then you will see that the `build & deploy` process is started.
+When you go to GitHub and open `Actions` then you will see that the `build & deploy` process is started.
 After a successful finish the site will be available under the address https://username.github.io/repository.
 
 Please obey the [guidelines](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) for using GitHub Pages.
