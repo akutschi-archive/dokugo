@@ -134,14 +134,14 @@
                 <br><br>
                 <p>A simple theme for technical documentation purposes.</p>
 <p><img src="screenshot.png" alt="Screenshot"></p>
-<h1 id="features">Features</h1>
+<h2 id="features">Features</h2>
 <ul>
 <li>LaTeX with MathJax</li>
 <li>Mermaid - generation of diagrams and flowcharts</li>
 <li>Breadcrumbs</li>
 <li>Table of Contents for articles</li>
 </ul>
-<h1 id="preview-theme-with-examplesite-content">Preview Theme with <code>exampleSite</code> Content</h1>
+<h2 id="preview-theme-with-examplesite-content">Preview Theme with <code>exampleSite</code> Content</h2>
 <p>If you want to test this theme just clone this repository with</p>
 <pre><code>git clone git@github.com:akutschi/dokugo.git
 </code></pre><p>and then</p>
@@ -149,10 +149,10 @@
 hugo server --themesDir ../../
 </code></pre><p>Browse site on http://localhost:1313.
 Or just visit <a href="https://akutschi.github.io/dokugo">https://akutschi.github.io/dokugo</a>.</p>
-<h1 id="quick-start">Quick Start</h1>
-<h2 id="requirement">Requirement</h2>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="requirement">Requirement</h3>
 <p>Hugo minimum version: <code>0.69</code></p>
-<h2 id="download">Download</h2>
+<h3 id="download">Download</h3>
 <p>Assuming that you created a new site with <code>hugo new site &lt;sitename&gt;</code> and <code>git</code> is installed.
 We simply clone this repository into your themes folder:</p>
 <pre><code>hugo new site &lt;sitename&gt;
@@ -161,23 +161,23 @@ git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
 </code></pre><p>Now we have created a new Hugo site, initialized a git repository and added the theme to our site.</p>
 <p>For more information read <a href="https://gohugo.io/getting-started/quick-start/">the Hugo documentation</a>.</p>
-<h2 id="configure">Configure</h2>
+<h3 id="configure">Configure</h3>
 <p>You may specify options in your config file <code>config.toml</code> or <code>config.yaml</code>/<code>config.json</code> of your site to make use of this theme&rsquo;s features.
 At least choose this theme in your config file.</p>
 <pre><code>theme: &quot;dokugo&quot;
 </code></pre><p>An example of a config file can be found in the <code>exampleSite</code> directory.
 Just copy the content or even the whole file into the root directory of your site.</p>
-<h1 id="documentation">Documentation</h1>
+<h2 id="documentation">Documentation</h2>
 <p>The documentation can be found on the <a href="https://akutschi.github.io/dokugo/documentation/dokugo/">demo site</a> or  <a href="http://localhost:1313/dokugo/documentation/dokugo/">here</a> when you are running the <code>exampleSite</code> with the command above.</p>
-<h1 id="contributions">Contributions</h1>
+<h2 id="contributions">Contributions</h2>
 <p>Problems? Feature requests? Improvements?</p>
 <p>Probably, since this theme is currently optimized for my own personal use.
 Nevertheless, feel free to open tickets for issues or merge requests.
 I am willing to discuss and consider every request.
 Thank you.</p>
-<h1 id="license">License</h1>
+<h2 id="license">License</h2>
 <p>DoKugo is licensed under the <a href="https://github.com/akutschi/dokugo/blob/master/LICENSE">GPLv3 license</a>.</p>
-<h1 id="author">Author</h1>
+<h2 id="author">Author</h2>
 <p><a href="https://github.com/akutschi">akutschi</a></p>
 <p>Copyright (c) 2021 akutschi</p>
 
@@ -187,9 +187,19 @@ Thank you.</p>
                 <div class="sticky-top">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#requirement">Requirement</a></li>
-    <li><a href="#download">Download</a></li>
-    <li><a href="#configure">Configure</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#preview-theme-with-examplesite-content">Preview Theme with <code>exampleSite</code> Content</a></li>
+    <li><a href="#quick-start">Quick Start</a>
+      <ul>
+        <li><a href="#requirement">Requirement</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#configure">Configure</a></li>
+      </ul>
+    </li>
+    <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#contributions">Contributions</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#author">Author</a></li>
   </ul>
 </nav>
                 </div>
