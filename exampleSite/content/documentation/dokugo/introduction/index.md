@@ -17,7 +17,7 @@ draft: false
 
 A simple theme for technical documentation purposes.
 
-![Screenshot](./screenshot.png)
+![Screenshot](screenshot.png)
 
 # Features
 
