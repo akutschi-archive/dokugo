@@ -8,12 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation</title>
+      <title>Introduction</title>
       <link>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</guid>
-      <description></description>
+      <description>A simple theme for technical documentation purposes.
+Features  LaTeX with MathJax Mermaid - generation of diagrams and flowcharts Breadcrumbs Table of Contents for articles  Preview Theme with exampleSite Content If you want to test this theme just clone this repository with
+git clone git@github.com:akutschi/dokugo.git and then
+cd exampleSite hugo server --themesDir ../../ Browse site on http://localhost:1313. Or just visit https://akutschi.github.io/dokugo.
+Quick Start Requirement Hugo minimum version: 0.69
+Download Assuming that you created a new site with hugo new site &amp;lt;sitename&amp;gt; and git is installed.</description>
     </item>
     
     <item>

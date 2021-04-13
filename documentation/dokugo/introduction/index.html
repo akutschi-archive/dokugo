@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://akutschi.github.io/dokugo/css/custom.css">
   
   
-  <title>Installation | DoKugo</title>
+  <title>Introduction | DoKugo</title>
 </head>
 
   <body class="d-flex flex-column">
@@ -93,7 +93,7 @@
     
         
         
-            <li class="breadcrumb-item active" aria-current="page">Installation</li>
+            <li class="breadcrumb-item active" aria-current="page">Introduction</li>
         
     
     </ol>
@@ -102,48 +102,96 @@
 
 </nav>
 
-        <h1>Installation</h1>
+        <h1>Introduction</h1>
         2021-04-12
         </br>
         
   
   
-  <a class="btn btn-sm btn-outline-info tag-btn" href="https://akutschi.github.io/dokugo/categories/documentation">documentation</a>
-  
-  
-  <a class="btn btn-sm btn-outline-info tag-btn" href="https://akutschi.github.io/dokugo/categories/themes">themes</a>
-  
-  
-  <a class="btn btn-sm btn-outline-info tag-btn" href="https://akutschi.github.io/dokugo/categories/hugo">hugo</a>
-  
-  
-  <a class="btn btn-sm btn-outline-info tag-btn" href="https://akutschi.github.io/dokugo/categories/installation">installation</a>
+  <a class="btn btn-sm btn-outline-info tag-btn" href="https://akutschi.github.io/dokugo/categories/dokugo">dokugo</a>
   
   <br>
   
   
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/markdown">markdown</a>
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/themes">themes</a>
   
   
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/css">css</a>
-  
-  
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/html">html</a>
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/documentation">documentation</a>
   
   
   <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/themes">themes</a>
+  
+  
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/hugo">hugo</a>
+  
+  
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/installation">installation</a>
   
 
 
         <div class="row">
             <div class="col-12 col-md-9">
                 <br><br>
-                
+                <p>A simple theme for technical documentation purposes.</p>
+<p><img src="./screenshot.png" alt="Screenshot"></p>
+<h1 id="features">Features</h1>
+<ul>
+<li>LaTeX with MathJax</li>
+<li>Mermaid - generation of diagrams and flowcharts</li>
+<li>Breadcrumbs</li>
+<li>Table of Contents for articles</li>
+</ul>
+<h1 id="preview-theme-with-examplesite-content">Preview Theme with <code>exampleSite</code> Content</h1>
+<p>If you want to test this theme just clone this repository with</p>
+<pre><code>git clone git@github.com:akutschi/dokugo.git
+</code></pre><p>and then</p>
+<pre><code>cd exampleSite
+hugo server --themesDir ../../
+</code></pre><p>Browse site on http://localhost:1313.
+Or just visit <a href="https://akutschi.github.io/dokugo">https://akutschi.github.io/dokugo</a>.</p>
+<h1 id="quick-start">Quick Start</h1>
+<h2 id="requirement">Requirement</h2>
+<p>Hugo minimum version: <code>0.69</code></p>
+<h2 id="download">Download</h2>
+<p>Assuming that you created a new site with <code>hugo new site &lt;sitename&gt;</code> and <code>git</code> is installed.
+We simply clone this repository into your themes folder:</p>
+<pre><code>hugo new site &lt;sitename&gt;
+cd &lt;sitename&gt;
+git init
+git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
+</code></pre><p>Now we have created a new Hugo site, initialized a git repository and added the theme to our site.</p>
+<p>For more information read <a href="https://gohugo.io/getting-started/quick-start/">the Hugo documentation</a>.</p>
+<h2 id="configure">Configure</h2>
+<p>You may specify options in your config file <code>config.toml</code> or <code>config.yaml</code>/<code>config.json</code> of your site to make use of this theme&rsquo;s features.
+At least choose this theme in your config file.</p>
+<pre><code>theme: &quot;dokugo&quot;
+</code></pre><p>An example of a config file can be found in the <code>exampleSite</code> directory.
+Just copy the content or even the whole file into the root directory of your site.</p>
+<h1 id="documentation">Documentation</h1>
+<p>The documentation can be found on the <a href="https://akutschi.github.io/dokugo/documentation/dokugo/">demo site</a> or  <a href="http://localhost:1313/dokugo/documentation/dokugo/">here</a> when you are running the <code>exampleSite</code> with the command above.</p>
+<h1 id="contributions">Contributions</h1>
+<p>Problems? Feature requests? Improvements?</p>
+<p>Probably, since this theme is currently optimized for my own personal use.
+Nevertheless, feel free to open tickets for issues or merge requests.
+I am willing to discuss and consider every request.
+Thank you.</p>
+<h1 id="license">License</h1>
+<p>DoKugo is licensed under the <a href="https://github.com/akutschi/dokugo/blob/master/LICENSE">GPLv3 license</a>.</p>
+<h1 id="author">Author</h1>
+<p><a href="https://github.com/akutschi">akutschi</a></p>
+<p>Copyright (c) 2021 akutschi</p>
+
             </div>
             <div class="d-none d-md-block col-md-3">
                 <br><br>
                 <div class="sticky-top">
-                <nav id="TableOfContents"></nav>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#requirement">Requirement</a></li>
+    <li><a href="#download">Download</a></li>
+    <li><a href="#configure">Configure</a></li>
+  </ul>
+</nav>
                 </div>
             </div>
         </div>

@@ -6,16 +6,7 @@
     <description>Recent content in html on DoKugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/html/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installation</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 04 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Syntax Guide</title>
       <link>https://akutschi.github.io/dokugo/documentation/markdown-syntax/</link>
