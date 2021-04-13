@@ -6,7 +6,56 @@
     <description>Recent content in DoKugo - Hugo Theme on DoKugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/documentation/dokugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/documentation/dokugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation and Deployment with GitHub</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</guid>
+      <description>In principal the same as in the manual installation and deployment, but we do not run hugo manually to create and publish the site. Instead we use GitHub Actions and publish on GitHub Pages.
+Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.</description>
+    </item>
+    
+    <item>
+      <title>Installation and Deployment with GitLab</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</guid>
+      <description>This is even simpler than the deployment with GitHub. It&amp;rsquo;s just one file in the project root to run GitLab CI/CD and to deploy on GitLab Pages.
+Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.
+If your are using Linux, it might be sufficient to install the version in your default repositories.</description>
+    </item>
+    
+    <item>
+      <title>Installation and Manual Deployment</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</guid>
+      <description>This guide will help you to install Hugo and DoKugo. You will be pointed to the documents to configure and create content for your site. Finally you create the static site and deploy it to your webhoster.
+Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/configuration/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Content Creation and Organization</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/content/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/content/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Introduction</title>
       <link>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</link>
@@ -14,11 +63,11 @@
       
       <guid>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</guid>
       <description>A simple theme for technical documentation purposes.
-Features  LaTeX with MathJax Mermaid - generation of diagrams and flowcharts Breadcrumbs Table of Contents for articles  Preview Theme with exampleSite Content If you want to test this theme just clone this repository with
+Features  LaTeX with MathJax Mermaid - generation of diagrams and flowcharts Breadcrumbs Table of Contents for articles  Preview Theme with exampleSite Content As you already did, just visit https://akutschi.github.io/dokugo.
+If you want to test this theme locally for playing around, just clone this repository with
 git clone git@github.com:akutschi/dokugo.git and then
-cd exampleSite hugo server --themesDir ../../ Browse site on http://localhost:1313. Or just visit https://akutschi.github.io/dokugo.
-Quick Start Requirement Hugo minimum version: 0.69
-Download Assuming that you created a new site with hugo new site &amp;lt;sitename&amp;gt; and git is installed.</description>
+cd exampleSite hugo server --themesDir ../../ Browse site on http://localhost:1313/dokugo.
+How To Install and Deploy Manually Basically you have to do this:</description>
     </item>
     
   </channel>

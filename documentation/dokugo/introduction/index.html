@@ -119,13 +119,7 @@
   <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/documentation">documentation</a>
   
   
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/themes">themes</a>
-  
-  
   <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/hugo">hugo</a>
-  
-  
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/installation">installation</a>
   
 
 
@@ -142,44 +136,43 @@
 <li>Table of Contents for articles</li>
 </ul>
 <h2 id="preview-theme-with-examplesite-content">Preview Theme with <code>exampleSite</code> Content</h2>
-<p>If you want to test this theme just clone this repository with</p>
+<p>As you already did, just visit <a href="https://akutschi.github.io/dokugo">https://akutschi.github.io/dokugo</a>.</p>
+<p>If you want to test this theme locally for playing around, just clone this repository with</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone git@github.com:akutschi/dokugo.git
 </code></pre></div><p>and then</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b58900">cd</span> exampleSite
 hugo server --themesDir ../../
-</code></pre></div><p>Browse site on http://localhost:1313.
-Or just visit <a href="https://akutschi.github.io/dokugo">https://akutschi.github.io/dokugo</a>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="requirement">Requirement</h3>
-<p>Hugo minimum version: <code>0.69</code></p>
-<h3 id="download">Download</h3>
-<p>Assuming that you created a new site with <code>hugo new site &lt;sitename&gt;</code> and <code>git</code> is installed.
-We simply clone this repository into your themes folder:</p>
+</code></pre></div><p>Browse site on <a href="http://localhost:1313/dokugo">http://localhost:1313/dokugo</a>.</p>
+<h2 id="how-to">How To</h2>
+<h3 id="install-and-deploy-manually">Install and Deploy Manually</h3>
+<p>Basically you have to do this:</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site &lt;sitename&gt;
 <span style="color:#b58900">cd</span> &lt;sitename&gt;
 git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
-</code></pre></div><p>Now we have created a new Hugo site, initialized a git repository and added the theme to our site.</p>
-<p>For more information read <a href="https://gohugo.io/getting-started/quick-start/">the Hugo documentation</a>.</p>
+</code></pre></div><p>Add some content and run</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo 
+</code></pre></div><p>The created <code>public</code> folder contains the static website. Just copy this to the server that publishes your page.</p>
+<p>A more detailed explanation how to install and deploy can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation/">here</a>.</p>
+<h3 id="install-and-deploy-with-github-actions-and-pages">Install and Deploy with GitHub Actions and Pages</h3>
+<p>In principal the same as in the previous section but we do not run <code>hugo</code> manually to create and publish the site.
+Instead we use <a href="https://docs.github.com/en/actions">GitHub Actions</a> and publish on <a href="https://docs.github.com/en/pages">GitHub Pages</a>.
+We just have to add two folders and one file to achieve this.</p>
+<p>The procedure can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/">here</a>.</p>
+<h3 id="install-and-deploy-with-gitlab-cicd-and-pages">Install and Deploy with GitLab CI/CD and Pages</h3>
+<p>This is even simpler than the deployment with GitHub.
+It&rsquo;s just one file in the project root to run <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a> and deploy on <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>.</p>
+<p>The documentation can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/">here</a>.</p>
 <h3 id="configure">Configure</h3>
-<p>You may specify options in your config file <code>config.toml</code> or <code>config.yaml</code>/<code>config.json</code> of your site to make use of this theme&rsquo;s features.
-At least choose this theme in your config file.</p>
+<p>The configuration is done in your config file <code>config.toml</code> or <code>config.yaml</code>/<code>config.json</code> of your site.
+At least choose the DoKugo theme in your config file.</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">theme: <span style="color:#2aa198">&#34;dokugo&#34;</span>
 </code></pre></div><p>An example of a config file can be found in the <code>exampleSite</code> directory.
 Just copy the content or even the whole file into the root directory of your site.</p>
-<h2 id="documentation">Documentation</h2>
-<p>The documentation can be found on the <a href="https://akutschi.github.io/dokugo/documentation/dokugo/">demo site</a> or  <a href="http://localhost:1313/dokugo/documentation/dokugo/">here</a> when you are running the <code>exampleSite</code> with the command above.</p>
-<h2 id="contributions">Contributions</h2>
-<p>Problems? Feature requests? Improvements?</p>
-<p>Probably, since this theme is currently optimized for my own personal use.
-Nevertheless, feel free to open tickets for issues or merge requests.
-I am willing to discuss and consider every request.
-Thank you.</p>
-<h2 id="license">License</h2>
-<p>DoKugo is licensed under the <a href="https://github.com/akutschi/dokugo/blob/master/LICENSE">GPLv3 license</a>.</p>
-<h2 id="author">Author</h2>
-<p><a href="https://github.com/akutschi">akutschi</a></p>
-<p>Copyright (c) 2021 akutschi</p>
+<p>Details about the configuration can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">here</a>.</p>
+<h3 id="create-and-manage-content">Create and Manage Content</h3>
+<p>Basically put your content as <code>markdown</code> files into the <code>content</code> folder. You can also create there subfolders to structure your publications.</p>
+<p><a href="(https://akutschi.github.io/dokugo/documentation/dokugo/content/)">Here</a> are more details.</p>
 
             </div>
             <div class="d-none d-md-block col-md-3">
@@ -189,17 +182,15 @@ Thank you.</p>
   <ul>
     <li><a href="#features">Features</a></li>
     <li><a href="#preview-theme-with-examplesite-content">Preview Theme with <code>exampleSite</code> Content</a></li>
-    <li><a href="#quick-start">Quick Start</a>
+    <li><a href="#how-to">How To</a>
       <ul>
-        <li><a href="#requirement">Requirement</a></li>
-        <li><a href="#download">Download</a></li>
+        <li><a href="#install-and-deploy-manually">Install and Deploy Manually</a></li>
+        <li><a href="#install-and-deploy-with-github-actions-and-pages">Install and Deploy with GitHub Actions and Pages</a></li>
+        <li><a href="#install-and-deploy-with-gitlab-cicd-and-pages">Install and Deploy with GitLab CI/CD and Pages</a></li>
         <li><a href="#configure">Configure</a></li>
+        <li><a href="#create-and-manage-content">Create and Manage Content</a></li>
       </ul>
     </li>
-    <li><a href="#documentation">Documentation</a></li>
-    <li><a href="#contributions">Contributions</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#author">Author</a></li>
   </ul>
 </nav>
                 </div>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="generator" content="Hugo 0.82.0" />
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://akutschi.github.io/dokugo/favicon/apple-touch-icon.png">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://akutschi.github.io/dokugo/favicon/favicon-32x32.png">
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://akutschi.github.io/dokugo/favicon/favicon-16x16.png">
+  
+  <link rel="manifest" href="https://akutschi.github.io/dokugo/favicon/site.webmanifest">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://akutschi.github.io/dokugo/css/custom.css">
+  
+  
+  <title>Installation and Deployment with GitLab | DoKugo</title>
+</head>
+
+  <body class="d-flex flex-column">
+    <div id="page-content">
+      <div class="container-fluid">
+        <div id="nav-border">
+  <nav id="nav" class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="https://akutschi.github.io/dokugo/">DoKugo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+         
+        
+        <li class="nav-item"></li>
+        <a class="nav-link" href="/dokugo/blog/">Blog</a>
+        </li>
+         
+        
+        <li class="nav-item"></li>
+        <a class="nav-link" href="/dokugo/projects/">Projects</a>
+        </li>
+         
+        
+        <li class="nav-item"></li>
+        <a class="nav-link" href="/dokugo/documentation/">Documentation</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+</div>
+
+      </div>
+      <div class="container-fluid">
+        <main id="main">
+          
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-2">
+        <nav aria-label="breadcrumb">
+
+    <ol  class="breadcrumb">
+        
+        
+            
+        
+            
+        
+            
+        
+        
+            <li class="breadcrumb-item">
+                <a href="https://akutschi.github.io/dokugo/">DoKugo</a>
+            </li>
+        
+    
+        
+        
+            <li class="breadcrumb-item">
+                <a href="https://akutschi.github.io/dokugo/documentation/">Documentation</a>
+            </li>
+        
+    
+        
+        
+            <li class="breadcrumb-item">
+                <a href="https://akutschi.github.io/dokugo/documentation/dokugo/">DoKugo - Hugo Theme</a>
+            </li>
+        
+    
+        
+        
+            <li class="breadcrumb-item active" aria-current="page">Installation and Deployment with GitLab</li>
+        
+    
+    </ol>
+
+    
+
+</nav>
+
+        <h1>Installation and Deployment with GitLab</h1>
+        2021-04-13
+        </br>
+        
+  
+  
+  <a class="btn btn-sm btn-outline-info tag-btn" href="https://akutschi.github.io/dokugo/categories/dokugo">dokugo</a>
+  
+  <br>
+  
+  
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/themes">themes</a>
+  
+  
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/documentation">documentation</a>
+  
+  
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/hugo">hugo</a>
+  
+  
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/installation">installation</a>
+  
+  
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/gitlab">gitlab</a>
+  
+
+
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <br><br>
+                <p>This is even simpler than the deployment with <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/">GitHub</a>.
+It&rsquo;s just one file in the project root to run <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a> and to deploy on <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>.</p>
+<h2 id="requirements">Requirements</h2>
+<h3 id="hugo">Hugo</h3>
+<p>The required minimum Hugo version can be found on the <a href="https://github.com/akutschi/dokugo">DoKugo</a> site.
+To install Hugo, head to the <a href="https://github.com/gohugoio/hugo/releases">release site</a> and download the release for your Operating System and architecture.
+Hugo Extended is not required, but doesn&rsquo;t harm.</p>
+<p>If your are using Linux, it might be sufficient to install the version in your default repositories.
+In Ubuntu just use:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install hugo
+</code></pre></div><p>To check if the installation was successful with <code>hugo version</code>, you should get the following output:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo version
+Hugo Static Site Generator v0.80.0-792EF0F4/extended linux/amd64 BuildDate: 2020-12-31T13:46:18Z
+</code></pre></div><h3 id="git">Git</h3>
+<p>The next requirement is Git.
+Just go to the <a href="https://git-scm.com/downloads">Git site</a> and follow the instructions, they are straightforward.</p>
+<p>In the case of Linux the usage of the package manager is in most cases recommended.
+If you are using Ubuntu use:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install git
+</code></pre></div><p>Check your installation with <code>git version</code>.
+You should get the following result:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git version
+git version 2.25.1
+</code></pre></div><h2 id="install-dokugo">Install DoKugo</h2>
+<p>Basically you have to do this:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site demodokugo
+<span style="color:#b58900">cd</span> demodokugo
+git init
+git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
+</code></pre></div><p>With these first command <code>hugo new site demodokugo</code> you created a new site with the following directory structure:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/
+demodokugo/
+├── archetypes
+│   └── default.md
+├── config.toml      &lt;----- The configuration file
+├── content          &lt;----- Here goes your own content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre></div><p>With <code>cd demodokugo</code> you change the directory and <code>git init</code> initializes Git.
+The last command downloads and adds the DoKugo theme to your site.
+Running this command will have the following output:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
+Cloning into <span style="color:#2aa198">&#39;/home/arthurk/Documents/demodokugo/themes/dokugo&#39;</span>...
+remote: Enumerating objects: 463, <span style="color:#719e07">done</span>.
+remote: Counting objects: 100% <span style="color:#719e07">(</span>463/463<span style="color:#719e07">)</span>, <span style="color:#719e07">done</span>.
+remote: Compressing objects: 100% <span style="color:#719e07">(</span>203/203<span style="color:#719e07">)</span>, <span style="color:#719e07">done</span>.
+remote: Total <span style="color:#2aa198">1095</span> <span style="color:#719e07">(</span>delta 251<span style="color:#719e07">)</span>, reused <span style="color:#2aa198">395</span> <span style="color:#719e07">(</span>delta 213<span style="color:#719e07">)</span>, pack-reused <span style="color:#2aa198">632</span>
+Receiving objects: 100% <span style="color:#719e07">(</span>1095/1095<span style="color:#719e07">)</span>, 320.29 KiB | 4.39 MiB/s, <span style="color:#719e07">done</span>.
+Resolving deltas: 100% <span style="color:#719e07">(</span>562/562<span style="color:#719e07">)</span>, <span style="color:#719e07">done</span>.
+</code></pre></div><p>And the directory structure will look like the following one:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/ -d
+demodokugo/
+├── archetypes
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+    └── dokugo          &lt;----- The submodule with the theme
+        ├── archetypes
+        ├── exampleSite
+        │   └── content
+        │       ├── blog
+        │       ├── documentation
+        │       │   └── dokugo
+        │       │       └── introduction
+        │       └── projects
+        ├── layouts
+        │   ├── _default
+        │   ├── partials
+        │   └── shortcodes
+        └── static
+            ├── css
+            ├── favicon
+            └── js
+</code></pre></div><h2 id="configuration">Configuration</h2>
+<p>It&rsquo;s time now to <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">configure</a> your site.</p>
+<p>We go the quick route.
+Just copy and paste the following into your <code>config.toml</code> in the root directory of your website.
+The only required change is the <code>baseURL</code>.
+Please, use the username and repository name where the page is stored:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">baseURL = &#34;https://username.gitlab.io/repository&#34;
+languageCode = &#34;en-us&#34;
+title = &#34;DemoDoKugo&#34;
+theme = &#34;dokugo&#34;
+enableEmoji = true  
+
+
+[taxonomies]
+  tag = &#34;tags&#34;
+  category = &#34;categories&#34;
+
+[params]
+  homeText = &#34;Simplicity!&#34;
+  dateFormat = &#34;2006-01-02&#34;
+
+[params.footer]
+  footerText = &#34;This is a very simple and clean theme for documentation purposes. Main goal is a layout that does not distract the reader and can be navigated easily.&#34;  
+  github = &#34;https://github.com/username/repository&#34;
+  gitlab = &#34;https://gitlab.com/username/repository&#34;
+  <span style="color:#586e75"># This line enables (true) or disables (false) the &#34;Powered by Hugo. Theme DoKugo.&#34; line.</span>
+  poweredByLine = true 
+
+[markup]
+  [markup.highlight]
+    lineNos = false
+    lineNumbersInTable = true
+    style = &#34;solarized-dark&#34;
+  [markup.tableOfContents]
+    endLevel = 6
+    ordered = false
+    startLevel = 2
+
+[menu]
+  [[menu.main]]
+    name = &#34;Blog&#34;
+    url = &#34;/blog/&#34;
+    weight = 1
+  [[menu.main]]
+    name = &#34;Projects&#34;
+    url = &#34;/projects/&#34;
+    weight = 2
+   [[menu.main]]
+    name = &#34;Documentation&#34;
+    url = &#34;/documentation/&#34;
+    weight = 3
+</code></pre></div><p>A more detailed explanation about the configuration can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">here</a>.</p>
+<h2 id="content">Content</h2>
+<p>Now, add some <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">content</a> and when you think you&rsquo;re ready you can check with the command <code>hugo server</code>:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo server
+Start building sites … 
+
+                   | EN  
+-------------------+-----
+  Pages            |  <span style="color:#2aa198">7</span>  
+  Paginator pages  |  <span style="color:#2aa198">0</span>  
+  Non-page files   |  <span style="color:#2aa198">0</span>  
+  Static files     |  <span style="color:#2aa198">9</span>  
+  Processed images |  <span style="color:#2aa198">0</span>  
+  Aliases          |  <span style="color:#2aa198">0</span>  
+  Sitemaps         |  <span style="color:#2aa198">1</span>  
+  Cleaned          |  <span style="color:#2aa198">0</span>  
+
+Built in <span style="color:#2aa198">5</span> ms
+Watching <span style="color:#719e07">for</span> changes in /home/hugo/Documents/demodokugo/<span style="color:#719e07">{</span>archetypes,content,data,layouts,static,themes<span style="color:#719e07">}</span>
+Watching <span style="color:#719e07">for</span> config changes in /home/hugo/Documents/demodokugo/config.toml
+Environment: <span style="color:#2aa198">&#34;development&#34;</span>
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ <span style="color:#719e07">(</span><span style="color:#b58900">bind</span> address 127.0.0.1<span style="color:#719e07">)</span>
+Press Ctrl+C to stop
+</code></pre></div><p>This will start a small webserver and when you open <a href="http://localhost:1313/">http://localhost:1313/</a> in your web browser then you can see your website.
+Changes will be shown immediately.</p>
+<h2 id="deployment">Deployment</h2>
+<p>Since we want to use GitLab Pages for hosting our site in conjunction with GitLab CI/CD we have to create the file <code>.gitlab-ci.yml</code>.
+The directory structure is the - shortened - following one:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/ -a
+demodokugo/
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+.
+.
+.
+├── .gitlab-ci.yml      &lt;----- Configuration file <span style="color:#719e07">for</span> GitHub Actions
+├── .gitmodules
+├── layouts
+├── public
+.
+.
+.
+</code></pre></div><p>Now we have an empty GitLab CI/CD configuration file.
+Copy and paste the code into the <code>deploy.yml</code> file:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#268bd2">image</span>: registry.gitlab.com/pages/hugo:latest
+
+<span style="color:#268bd2">variables</span>:
+  <span style="color:#268bd2">GIT_SUBMODULE_STRATEGY</span>: recursive
+
+<span style="color:#268bd2">pages</span>:
+  <span style="color:#268bd2">script</span>:
+    - hugo
+  <span style="color:#268bd2">artifacts</span>:
+    <span style="color:#268bd2">paths</span>:
+      - public
+  <span style="color:#268bd2">only</span>:
+    - master
+</code></pre></div><p>Now you can commit and push everything to your GitHub repository.
+The steps are:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add .
+git commit -m <span style="color:#2aa198">&#34;Initial commit&#34;</span>
+git branch -M main
+git remote add origin git@gitlab.com:username/repository.git
+git push -u origin main
+</code></pre></div><p>The last step will send everything to the GitLab repository.
+When you go to GitLab and open <code>CI/CD</code> then you will see that the building and deploy process is started.
+After a successful finish the site will be available under the address <a href="https://username.gitlab.io/repository">https://username.gitlab.io/repository</a>.</p>
+
+            </div>
+            <div class="d-none d-md-block col-md-3">
+                <br><br>
+                <div class="sticky-top">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#requirements">Requirements</a>
+      <ul>
+        <li><a href="#hugo">Hugo</a></li>
+        <li><a href="#git">Git</a></li>
+      </ul>
+    </li>
+    <li><a href="#install-dokugo">Install DoKugo</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#content">Content</a></li>
+    <li><a href="#deployment">Deployment</a></li>
+  </ul>
+</nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </main>
+      </div>
+    </div>
+    <footer id="sticky-footer" class="site-footer">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-lg-4 offset-lg-2">
+          <h6>About</h6>
+          <p class="text-justify">This is a very simple and clean theme for documentation purposes. Main goal is a layout that does not distract the reader and can be navigated easily.</p>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h6>Content</h6>
+          <ul class="footer-links">
+            <li><a href="https://akutschi.github.io/dokugo/documentation/">Blog</a></li>
+            <li><a href="https://akutschi.github.io/dokugo/projects/">Projects</a></li>
+            <li><a href="https://akutschi.github.io/dokugo/documentation/">Documentation</a></li>
+            <li><a href="https://akutschi.github.io/dokugo/categories/">Categories</a></li>
+            <li><a href="https://akutschi.github.io/dokugo/tags/">Tags</a></li>
+          </ul>
+        </div>
+
+        <div class=" col-sm-6 col-lg-2">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="https://akutschi.github.io/dokugo/about/">About</a></li>
+            <li><a href="https://akutschi.github.io/dokugo/contact/">Contact</a></li>
+            <li><a href="https://akutschi.github.io/dokugo/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="d-none d-md-block col-lg-2">
+        </div>
+        
+      </div>
+      <hr>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <ul class="social-icons text-left">
+            <li><a class="" href="http://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i></a></li>
+            <li><a class="" href="http://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></li>
+          </ul>
+          <p class="footer-links">Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <ul class="social-icons text-right">
+            <li><a class="" href="https://github.com/akutschi/dokugo"><i class="fab fa-github"></i></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+<div class="poweredby-footer">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="row justify-content-center">
+        <p class="footer-links">Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://akutschi.github.io/dokugo">DoKugo</a>.</p>
+      </div>
+    </div>
+  </div>
+
+
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['%$', '%$'], ['\\(', '\\)']]
+      },
+    };
+</script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script async src="https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://akutschi.github.io/dokugo/js/toc.js"></script>
+
+
+
+  </body>
+</html>
