@@ -75,7 +75,7 @@ Problems? Feature requests? Improvements?
 
 Probably, since this theme is currently optimized for my own personal use.
 Nevertheless, feel free to open tickets for issues or merge requests. 
-I am willing to discuss and consider every request. 
+I am happy to discuss and consider every request. 
 Thank you.
 
 ## License
