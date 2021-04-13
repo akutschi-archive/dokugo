@@ -14,7 +14,7 @@ A simple theme for technical documentation purposes.
 - Breadcrumbs
 - Table of Contents for articles
 
-# Preview theme with exampleSite content
+# Preview Theme with `exampleSite` Content
 
 If you want to test this theme just clone this repository with
 
@@ -66,6 +66,9 @@ theme: "dokugo"
 An example of a config file can be found in the `exampleSite` directory. 
 Just copy the content or even the whole file into the root directory of your site.
 
+# Documentation
+
+The documentation can be found on the [demo site](https://akutschi.github.io/dokugo/documentation/dokugo/) or  [here](http://localhost:1313/dokugo/documentation/dokugo/) when you are running the `exampleSite` with the command above.
 # Contributions 
 
 Problems? Feature requests? Improvements? 
