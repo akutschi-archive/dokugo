@@ -16,7 +16,7 @@ draft: false
 ---
 
 This is even simpler than the deployment with [GitHub]({{< ref "../installation_github/index.md" >}}). 
-It's just one file in the project root to run [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) and deploy on [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/).
+It's just one file in the project root to run [GitLab CI/CD](https://docs.gitlab.com/ee/ci/) and to deploy on [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/).
 
 ## Requirements
 
@@ -137,7 +137,8 @@ It's time now to [configure]({{< ref "../configuration/index.md" >}}) your site.
 
 We go the quick route.
 Just copy and paste the following into your `config.toml` in the root directory of your website.
-The only required change is the `baseURL`, please use the username and repository name where the page is stored:
+The only required change is the `baseURL`.
+Please, use the username and repository name where the page is stored:
 
 ```yaml
 baseURL = "https://username.gitlab.io/repository"
