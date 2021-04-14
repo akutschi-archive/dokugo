@@ -2,10 +2,10 @@
 author: DoKugo
 title: Configuration
 description: Configure Hugo and DoKugo
-date: 2021-04-12
+date: 2021-04-14
 categories:
     - dokugo
-categories_weight: 5
+categories_weight: 3
 tags:
     - themes
     - documentation
@@ -17,18 +17,13 @@ draft: false
 Now it's time to configure your site. 
 The configuration is done in the `config.toml` file.
 This file is located in the root of your Hugo project.
-After running `hugo new site demodokugo` your directory and file structure should look like the following one:
+After creating the directories like explained in the [installation step](({{< ref "../content/index.md" >}})) your directory and file structure should look like the following one:
 
 ```bash
 $ tree demodokugo/
 demodokugo/
-├── archetypes
-│   └── default.md
 ├── config.toml      <----- The configuration file
 ├── content
-├── data
-├── layouts
-├── static
 └── themes
 ```
 

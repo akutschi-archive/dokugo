@@ -1,7 +1,7 @@
 ---
 author: DoKugo
-title: Installation and Manual Deployment
-description: Simple installation with manual deployment
+title: Installation
+description: Simple installation of Hugo and DoKugo theme
 date: 2021-04-13
 categories:
     - dokugo
@@ -16,7 +16,7 @@ draft: false
 
 This guide will help you to install Hugo and DoKugo. 
 You will be pointed to the documents to configure and create content for your site.
-Finally you create the static site and deploy it to your webhoster.
+Finally you have to choose how to create the static site and to deploy it to the service of your choice.
 
 ## Requirements
 
@@ -65,30 +65,24 @@ git version 2.25.1
 Basically you have to do this:
 
 ```bash
-hugo new site demodokugo
+mkdir -p demodokugo/content
 cd demodokugo
 git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
 ```
 
-With these first command `hugo new site demodokugo` you created a new site with the following directory structure:
+With the first command `mkdir -p demodokugo/content` you just created the folders for the content of a new site.
+The directory structure is quite simple:
 
 ```bash
 $ tree demodokugo/
 demodokugo/
-├── archetypes
-│   └── default.md
-├── config.toml      <----- The configuration file
-├── content          <----- Here goes your own content
-├── data
-├── layouts
-├── static
-└── themes
+└── content          <----- Here goes your own content
 ```
 
 With `cd demodokugo` you change the directory and `git init` initializes Git.
 The last command downloads and adds the DoKugo theme to your site.
-Running this command will have the following output:
+Running this command will generate the following output:
 
 ```bash 
 $ git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
@@ -106,11 +100,7 @@ And the directory structure will look like the following one:
 ```bash
 $ tree demodokugo/ -d
 demodokugo/
-├── archetypes
 ├── content
-├── data
-├── layouts
-├── static
 └── themes
     └── dokugo          <----- The submodule with the theme
         ├── archetypes
@@ -186,6 +176,16 @@ enableEmoji = true
     weight = 3
 ```
 
+The directory structure should look like the following one:
+
+```bash
+$ tree demodokugo/
+demodokugo/
+├── config.toml      <----- The configuration file
+├── content          <----- Here goes your own content
+└── themes
+```
+
 A more detailed explanation about the configuration can be found [here]({{< ref "../configuration/index.md" >}}).
 
 ## Content
@@ -222,44 +222,8 @@ Changes will be shown immediately.
 
 ## Deployment
 
-Now, when you think you're ready to publish something just run `hugo`:
+This guide explains three possibilities to deploy your site:
 
-```bash
-$ hugo 
-Start building sites … 
-
-                   | EN  
--------------------+-----
-  Pages            |  7  
-  Paginator pages  |  0  
-  Non-page files   |  0  
-  Static files     |  9  
-  Processed images |  0  
-  Aliases          |  0  
-  Sitemaps         |  1  
-  Cleaned          |  0  
-
-Total in 14 ms
-```
-
-This command will create the `public` folder inside your project root. 
-
-```bash
-$ tree demodokugo/ -L 1
-demodokugo/
-├── archetypes
-├── config.toml
-├── content
-├── data
-├── layouts
-├── public      <----- Your generated content
-├── resources
-├── static
-└── themes
-```
-
-There are now dozen of possibilities how to publish the site and it is impossible to cover them all.
-Best of all, head to your webhoster and check their documentation how to upload your website to the webserver.
-Sometimes there is a web interface where you can drag and drop your files to publish them.
-
-Basically, copy the content of the `public` directory to the server that publishes your page.
+- [Manual deployment]({{< ref "../deployment_manual/index.md" >}})
+- [GitHub]({{< ref "../deployment_github/index.md" >}}) Actions and Pages
+- [GitLab]({{< ref "../deployment_gitlab/index.md" >}}) CI/CD and Pages

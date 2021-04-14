@@ -40,31 +40,55 @@ Hugo minimum version: `0.69`
 
 ### Download
 
-Assuming that you created a new site with `hugo new site <sitename>` and `git` is installed. 
-We simply clone this repository into your themes folder:
+Create a folder that holds your project and there a folder called `content`. Assuming that `git` is installed just initialize Git and simply clone this repository as submodule into your themes folder:
 
-```
-hugo new site <sitename>
-cd <sitename>
+```bash
+mkdir -p <SITENAME>/content
+cd <SITENAME>
 git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
 ```
 
-Now we have created a new Hugo site, initialized a git repository and added the theme to our site.
+Now we have created a new Hugo site, initialized a git repository and added the theme as submodule to our site.
 
-For more information read [the Hugo documentation](https://gohugo.io/getting-started/quick-start/).
+### Configuration and Content
 
-### Configure
+Now we add the [configuration file](https://akutschi.github.io/dokugo/documentation/dokugo/configuration/) and the [content](https://akutschi.github.io/dokugo/documentation/dokugo/content/) from the example site to get started.
 
-You may specify options in your config file `config.toml` or `config.yaml`/`config.json` of your site to make use of this theme's features. 
-At least choose this theme in your config file.
-
-```
-theme: "dokugo"
+```bash
+cp -r themes/dokugo/exampleSite/content/* ./content/
+cp themes/dokugo/exampleSite/config.toml ./
 ```
 
-An example of a config file can be found in the `exampleSite` directory. 
-Just copy the content or even the whole file into the root directory of your site.
+### Start
+Start the built-in Hugo web server with `hugo server` to check the page:
+
+```bash
+$ hugo server
+Start building sites … 
+
+                   | EN  
+-------------------+-----
+  Pages            | 76  
+  Paginator pages  |  0  
+  Non-page files   |  1  
+  Static files     |  9  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Built in 62 ms
+Watching for changes in /home/hugo/<SITENAME>/{content,themes}
+Watching for config changes in /home/hugo/<SITENAME>/config.toml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/dokugo/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+```
+
+Open [http://localhost:1313/](http://localhost:1313/) in your web browser and then you can see your website. 
 
 ## Documentation
 
