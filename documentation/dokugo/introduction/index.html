@@ -136,35 +136,26 @@
 <li>Table of Contents for articles</li>
 </ul>
 <h2 id="preview-theme-with-examplesite-content">Preview Theme with <code>exampleSite</code> Content</h2>
-<p>As you already did, just visit <a href="https://akutschi.github.io/dokugo">https://akutschi.github.io/dokugo</a>.</p>
-<p>If you want to test this theme locally for playing around, just clone this repository with</p>
+<p>Just visit <a href="https://akutschi.github.io/dokugo">https://akutschi.github.io/dokugo</a> to preview this theme.
+But if you want to test this theme locally for playing around, just clone this repository with</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone git@github.com:akutschi/dokugo.git
 </code></pre></div><p>and then</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b58900">cd</span> exampleSite
 hugo server --themesDir ../../
-</code></pre></div><p>Browse site on <a href="http://localhost:1313/dokugo">http://localhost:1313/dokugo</a>.</p>
+</code></pre></div><p>The output of the command above shows you the address, but usually you can find the page at <a href="http://localhost:1313/dokugo">http://localhost:1313/dokugo</a>.</p>
 <h2 id="how-to">How To</h2>
-<h3 id="install-and-deploy-manually">Install and Deploy Manually</h3>
+<h3 id="install">Install</h3>
 <p>Basically you have to do this:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site &lt;sitename&gt;
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p &lt;SITENAME&gt;/content
 <span style="color:#b58900">cd</span> &lt;sitename&gt;
 git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
-</code></pre></div><p>Add some content and run</p>
+</code></pre></div><p>Configure, add some content and run</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo 
 </code></pre></div><p>The created <code>public</code> folder contains the static website. Just copy this to the server that publishes your page.</p>
-<p>A more detailed explanation how to install and deploy can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation/">here</a>.</p>
-<h3 id="install-and-deploy-with-github-actions-and-pages">Install and Deploy with GitHub Actions and Pages</h3>
-<p>In principal the same as in the previous section but we do not run <code>hugo</code> manually to create and publish the site.
-Instead we use <a href="https://docs.github.com/en/actions">GitHub Actions</a> and publish on <a href="https://docs.github.com/en/pages">GitHub Pages</a>.
-We just have to add two folders and one file to achieve this.</p>
-<p>The procedure can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/">here</a>.</p>
-<h3 id="install-and-deploy-with-gitlab-cicd-and-pages">Install and Deploy with GitLab CI/CD and Pages</h3>
-<p>This is even simpler than the deployment with GitHub.
-It&rsquo;s just one file in the project root to run <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a> and deploy on <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>.</p>
-<p>The documentation can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/">here</a>.</p>
+<p>A more detailed explanation how to install this theme can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation/">here</a>.</p>
 <h3 id="configure">Configure</h3>
-<p>The configuration is done in your config file <code>config.toml</code> or <code>config.yaml</code>/<code>config.json</code> of your site.
+<p>The configuration is done in your config file <code>config.toml</code>, <code>config.yaml</code> or <code>config.json</code> of your site.
 At least choose the DoKugo theme in your config file.</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">theme: <span style="color:#2aa198">&#34;dokugo&#34;</span>
 </code></pre></div><p>An example of a config file can be found in the <code>exampleSite</code> directory.
@@ -172,7 +163,18 @@ Just copy the content or even the whole file into the root directory of your sit
 <p>Details about the configuration can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">here</a>.</p>
 <h3 id="create-and-manage-content">Create and Manage Content</h3>
 <p>Basically put your content as <code>markdown</code> files into the <code>content</code> folder. You can also create there subfolders to structure your publications.</p>
-<p><a href="(https://akutschi.github.io/dokugo/documentation/dokugo/content/)">Here</a> are more details.</p>
+<p><a href="https://akutschi.github.io/dokugo/documentation/dokugo/content/">Here</a> are more details.</p>
+<h3 id="deploy-manually">Deploy Manually</h3>
+<p>The description of the manual deployment can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/deployment_manual/">here</a>.</p>
+<h3 id="deploy-with-github-actions-and-pages">Deploy with GitHub Actions and Pages</h3>
+<p>In principal the same as in the previous section but we do not run <code>hugo</code> manually to create and publish the site.
+Instead we use <a href="https://docs.github.com/en/actions">GitHub Actions</a> and publish on <a href="https://docs.github.com/en/pages">GitHub Pages</a>.
+We just have to add two folders and one file to achieve this.</p>
+<p>The procedure can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/">here</a>.</p>
+<h3 id="deploy-with-gitlab-cicd-and-pages">Deploy with GitLab CI/CD and Pages</h3>
+<p>This is even simpler than the deployment with GitHub.
+It&rsquo;s just one file in the project root to run <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a> and deploy on <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>.</p>
+<p>The documentation can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/">here</a>.</p>
 
             </div>
             <div class="d-none d-md-block col-md-3">
@@ -184,11 +186,12 @@ Just copy the content or even the whole file into the root directory of your sit
     <li><a href="#preview-theme-with-examplesite-content">Preview Theme with <code>exampleSite</code> Content</a></li>
     <li><a href="#how-to">How To</a>
       <ul>
-        <li><a href="#install-and-deploy-manually">Install and Deploy Manually</a></li>
-        <li><a href="#install-and-deploy-with-github-actions-and-pages">Install and Deploy with GitHub Actions and Pages</a></li>
-        <li><a href="#install-and-deploy-with-gitlab-cicd-and-pages">Install and Deploy with GitLab CI/CD and Pages</a></li>
+        <li><a href="#install">Install</a></li>
         <li><a href="#configure">Configure</a></li>
         <li><a href="#create-and-manage-content">Create and Manage Content</a></li>
+        <li><a href="#deploy-manually">Deploy Manually</a></li>
+        <li><a href="#deploy-with-github-actions-and-pages">Deploy with GitHub Actions and Pages</a></li>
+        <li><a href="#deploy-with-gitlab-cicd-and-pages">Deploy with GitLab CI/CD and Pages</a></li>
       </ul>
     </li>
   </ul>

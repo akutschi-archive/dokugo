@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deployment on DoKugo</title>
+    <link>https://akutschi.github.io/dokugo/tags/deployment/</link>
+    <description>Recent content in deployment on DoKugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deployment with GitHub</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/</guid>
+      <description>Here we are not running hugo manually to create and publish the site as in the manual deployment. Instead we use GitHub Actions and publish on GitHub Pages.
+Configuration For a successful deployment we have to adjust the config.toml. Just replace the baseURL with the correct URL.
+baseURL = &amp;#34;https://username.github.io/repository/ Here you find some information for different types of GitHub Pages sites. The type decides which baseURL you have to use.</description>
+    </item>
+    
+    <item>
+      <title>Deployment with GitLab</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/</guid>
+      <description>This is even simpler than the deployment with GitHub. It&amp;rsquo;s just one file in the project root to run GitLab CI/CD and to deploy on GitLab Pages.
+Configuration For a successful deployment we have to adjust the config.toml. Just replace the baseURL with the correct URL.
+baseURL = &amp;#34;https://username.gitlab.io/repository/ Here you find some information for the different domain names for GitLab Pages. The type decides which baseURL you have to use.</description>
+    </item>
+    
+    <item>
+      <title>Manual Deployment</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_manual/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_manual/</guid>
+      <description>This very short guide will help you to generate your content with Hugo. You will get some hints how to deploy your website manually to your webhoster.
+Deployment When you think you&amp;rsquo;re ready to publish something just run hugo:
+$ hugo Start building sites … | EN -------------------+----- Pages | 7 Paginator pages | 0 Non-page files | 0 Static files | 9 Processed images | 0 Aliases | 0 Sitemaps | 1 Cleaned | 0 Total in 14 ms This command will create the public folder inside your project root.</description>
+    </item>
+    
+  </channel>
+</rss>

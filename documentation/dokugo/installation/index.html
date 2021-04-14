@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://akutschi.github.io/dokugo/css/custom.css">
   
   
-  <title>Installation and Manual Deployment | DoKugo</title>
+  <title>Installation | DoKugo</title>
 </head>
 
   <body class="d-flex flex-column">
@@ -93,7 +93,7 @@
     
         
         
-            <li class="breadcrumb-item active" aria-current="page">Installation and Manual Deployment</li>
+            <li class="breadcrumb-item active" aria-current="page">Installation</li>
         
     
     </ol>
@@ -102,7 +102,7 @@
 
 </nav>
 
-        <h1>Installation and Manual Deployment</h1>
+        <h1>Installation</h1>
         2021-04-13
         </br>
         
@@ -131,7 +131,7 @@
                 <br><br>
                 <p>This guide will help you to install Hugo and DoKugo.
 You will be pointed to the documents to configure and create content for your site.
-Finally you create the static site and deploy it to your webhoster.</p>
+Finally you have to choose how to create the static site and to deploy it to the service of your choice.</p>
 <h2 id="requirements">Requirements</h2>
 <h3 id="hugo">Hugo</h3>
 <p>The required minimum Hugo version can be found on the <a href="https://github.com/akutschi/dokugo">DoKugo</a> site.
@@ -155,24 +155,18 @@ You should get the following result:</p>
 git version 2.25.1
 </code></pre></div><h2 id="install-dokugo">Install DoKugo</h2>
 <p>Basically you have to do this:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site demodokugo
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p demodokugo/content
 <span style="color:#b58900">cd</span> demodokugo
 git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
-</code></pre></div><p>With these first command <code>hugo new site demodokugo</code> you created a new site with the following directory structure:</p>
+</code></pre></div><p>With the first command <code>mkdir -p demodokugo/content</code> you just created the folders for the content of a new site.
+The directory structure is quite simple:</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/
 demodokugo/
-├── archetypes
-│   └── default.md
-├── config.toml      &lt;----- The configuration file
-├── content          &lt;----- Here goes your own content
-├── data
-├── layouts
-├── static
-└── themes
+└── content          &lt;----- Here goes your own content
 </code></pre></div><p>With <code>cd demodokugo</code> you change the directory and <code>git init</code> initializes Git.
 The last command downloads and adds the DoKugo theme to your site.
-Running this command will have the following output:</p>
+Running this command will generate the following output:</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
 Cloning into <span style="color:#2aa198">&#39;/home/arthurk/Documents/demodokugo/themes/dokugo&#39;</span>...
 remote: Enumerating objects: 463, <span style="color:#719e07">done</span>.
@@ -184,11 +178,7 @@ Resolving deltas: 100% <span style="color:#719e07">(</span>562/562<span style="c
 </code></pre></div><p>And the directory structure will look like the following one:</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/ -d
 demodokugo/
-├── archetypes
 ├── content
-├── data
-├── layouts
-├── static
 └── themes
     └── dokugo          &lt;----- The submodule with the theme
         ├── archetypes
@@ -256,6 +246,12 @@ enableEmoji = true
     name = &#34;Documentation&#34;
     url = &#34;/documentation/&#34;
     weight = 3
+</code></pre></div><p>The directory structure should look like the following one:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/
+demodokugo/
+├── config.toml      &lt;----- The configuration file
+├── content          &lt;----- Here goes your own content
+└── themes
 </code></pre></div><p>A more detailed explanation about the configuration can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">here</a>.</p>
 <h2 id="content">Content</h2>
 <p>Now, add some <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">content</a> and when you think you&rsquo;re ready you can check with the command <code>hugo server</code>:</p>
@@ -284,38 +280,12 @@ Press Ctrl+C to stop
 </code></pre></div><p>This will start a small webserver and when you open <a href="http://localhost:1313/">http://localhost:1313/</a> in your web browser then you can see your website.
 Changes will be shown immediately.</p>
 <h2 id="deployment">Deployment</h2>
-<p>Now, when you think you&rsquo;re ready to publish something just run <code>hugo</code>:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo 
-Start building sites … 
-
-                   | EN  
--------------------+-----
-  Pages            |  <span style="color:#2aa198">7</span>  
-  Paginator pages  |  <span style="color:#2aa198">0</span>  
-  Non-page files   |  <span style="color:#2aa198">0</span>  
-  Static files     |  <span style="color:#2aa198">9</span>  
-  Processed images |  <span style="color:#2aa198">0</span>  
-  Aliases          |  <span style="color:#2aa198">0</span>  
-  Sitemaps         |  <span style="color:#2aa198">1</span>  
-  Cleaned          |  <span style="color:#2aa198">0</span>  
-
-Total in <span style="color:#2aa198">14</span> ms
-</code></pre></div><p>This command will create the <code>public</code> folder inside your project root.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/ -L <span style="color:#2aa198">1</span>
-demodokugo/
-├── archetypes
-├── config.toml
-├── content
-├── data
-├── layouts
-├── public      &lt;----- Your generated content
-├── resources
-├── static
-└── themes
-</code></pre></div><p>There are now dozen of possibilities how to publish the site and it is impossible to cover them all.
-Best of all, head to your webhoster and check their documentation how to upload your website to the webserver.
-Sometimes there is a web interface where you can drag and drop your files to publish them.</p>
-<p>Basically, copy the content of the <code>public</code> directory to the server that publishes your page.</p>
+<p>This guide explains three possibilities to deploy your site:</p>
+<ul>
+<li><a href="https://akutschi.github.io/dokugo/documentation/dokugo/deployment_manual/">Manual deployment</a></li>
+<li><a href="https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/">GitHub</a> Actions and Pages</li>
+<li><a href="https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/">GitLab</a> CI/CD and Pages</li>
+</ul>
 
             </div>
             <div class="d-none d-md-block col-md-3">

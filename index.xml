@@ -6,56 +6,68 @@
     <description>Recent content on DoKugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installation and Deployment with GitHub</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</guid>
-      <description>In principal the same as in the manual installation and deployment, but we do not run hugo manually to create and publish the site. Instead we use GitHub Actions and publish on GitHub Pages.
-Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.</description>
-    </item>
-    
-    <item>
-      <title>Installation and Deployment with GitLab</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</guid>
-      <description>This is even simpler than the deployment with GitHub. It&amp;rsquo;s just one file in the project root to run GitLab CI/CD and to deploy on GitLab Pages.
-Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.
-If your are using Linux, it might be sufficient to install the version in your default repositories.</description>
-    </item>
-    
-    <item>
-      <title>Installation and Manual Deployment</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</guid>
-      <description>This guide will help you to install Hugo and DoKugo. You will be pointed to the documents to configure and create content for your site. Finally you create the static site and deploy it to your webhoster.
-Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuration</title>
       <link>https://akutschi.github.io/dokugo/documentation/dokugo/configuration/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 14 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/documentation/dokugo/configuration/</guid>
-      <description>Now it&amp;rsquo;s time to configure your site. The configuration is done in the config.toml file. This file is located in the root of your Hugo project. After running hugo new site demodokugo your directory and file structure should look like the following one:
-$ tree demodokugo/ demodokugo/ ├── archetypes │ └── default.md ├── config.toml &amp;lt;----- The configuration file ├── content ├── data ├── layouts ├── static └── themes Overview The whole config.</description>
+      <description>Now it&amp;rsquo;s time to configure your site. The configuration is done in the config.toml file. This file is located in the root of your Hugo project. After creating the directories like explained in the installation step your directory and file structure should look like the following one:
+$ tree demodokugo/ demodokugo/ ├── config.toml &amp;lt;----- The configuration file ├── content └── themes Overview The whole config.toml file is the following one:</description>
     </item>
     
     <item>
       <title>Content Creation and Organization</title>
       <link>https://akutschi.github.io/dokugo/documentation/dokugo/content/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 14 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/documentation/dokugo/content/</guid>
-      <description>Default Folders The basic idea is that your content folder has three subfolders:
- blog for blog articles, documentation for the content of several topics and projects for the description of projects.  Each folder itself can contain other folders. For example, the project folder can have folders for a Raspberry Pi cluster project, a home cinema project and an art project. Each project folder can contain multiple articles written in Markdown.</description>
+      <description>Default Folders The basic idea is that your content folder has three subfolders, the section folders:
+ blog for blog articles, documentation for the content of several topics and projects for the description of projects.  Each folder can contain other folders. For example, the project folder can have folders for a Raspberry Pi cluster project, a home cinema project and an art project. Each project folder can contain multiple articles written in Markdown.</description>
+    </item>
+    
+    <item>
+      <title>Deployment with GitHub</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/</guid>
+      <description>Here we are not running hugo manually to create and publish the site as in the manual deployment. Instead we use GitHub Actions and publish on GitHub Pages.
+Configuration For a successful deployment we have to adjust the config.toml. Just replace the baseURL with the correct URL.
+baseURL = &amp;#34;https://username.github.io/repository/ Here you find some information for different types of GitHub Pages sites. The type decides which baseURL you have to use.</description>
+    </item>
+    
+    <item>
+      <title>Deployment with GitLab</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/</guid>
+      <description>This is even simpler than the deployment with GitHub. It&amp;rsquo;s just one file in the project root to run GitLab CI/CD and to deploy on GitLab Pages.
+Configuration For a successful deployment we have to adjust the config.toml. Just replace the baseURL with the correct URL.
+baseURL = &amp;#34;https://username.gitlab.io/repository/ Here you find some information for the different domain names for GitLab Pages. The type decides which baseURL you have to use.</description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</guid>
+      <description>This guide will help you to install Hugo and DoKugo. You will be pointed to the documents to configure and create content for your site. Finally you have to choose how to create the static site and to deploy it to the service of your choice.
+Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture.</description>
+    </item>
+    
+    <item>
+      <title>Manual Deployment</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_manual/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_manual/</guid>
+      <description>This very short guide will help you to generate your content with Hugo. You will get some hints how to deploy your website manually to your webhoster.
+Deployment When you think you&amp;rsquo;re ready to publish something just run hugo:
+$ hugo Start building sites … | EN -------------------+----- Pages | 7 Paginator pages | 0 Non-page files | 0 Static files | 9 Processed images | 0 Aliases | 0 Sitemaps | 1 Cleaned | 0 Total in 14 ms This command will create the public folder inside your project root.</description>
     </item>
     
     <item>
@@ -65,11 +77,9 @@ $ tree demodokugo/ demodokugo/ ├── archetypes │ └── default.md �
       
       <guid>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</guid>
       <description>A simple theme for technical documentation purposes.
-Features  LaTeX with MathJax Mermaid - generation of diagrams and flowcharts Breadcrumbs Table of Contents for articles  Preview Theme with exampleSite Content As you already did, just visit https://akutschi.github.io/dokugo.
-If you want to test this theme locally for playing around, just clone this repository with
+Features  LaTeX with MathJax Mermaid - generation of diagrams and flowcharts Breadcrumbs Table of Contents for articles  Preview Theme with exampleSite Content Just visit https://akutschi.github.io/dokugo to preview this theme. But if you want to test this theme locally for playing around, just clone this repository with
 git clone git@github.com:akutschi/dokugo.git and then
-cd exampleSite hugo server --themesDir ../../ Browse site on http://localhost:1313/dokugo.
-How To Install and Deploy Manually Basically you have to do this:</description>
+cd exampleSite hugo server --themesDir ../../ The output of the command above shows you the address, but usually you can find the page at http://localhost:1313/dokugo.</description>
     </item>
     
     <item>

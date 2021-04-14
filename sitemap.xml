@@ -3,21 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://akutschi.github.io/dokugo/categories/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/configuration/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/configuration/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/content/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/content/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/documentation/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/tags/documentation/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/categories/dokugo/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/documentation/dokugo/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/hugo/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/themes/</loc>
+    <lastmod>2021-04-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/tags/deployment/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/</loc>
+    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/</loc>
     <lastmod>2021-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/tags/github/</loc>
@@ -26,38 +56,14 @@
     <loc>https://akutschi.github.io/dokugo/tags/gitlab/</loc>
     <lastmod>2021-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/hugo/</loc>
+    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</loc>
     <lastmod>2021-04-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/tags/installation/</loc>
     <lastmod>2021-04-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</loc>
+    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_manual/</loc>
     <lastmod>2021-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/themes/</loc>
-    <lastmod>2021-04-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/configuration/</loc>
-    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/configuration/</loc>
-    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/tags/content/</loc>
-    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://akutschi.github.io/dokugo/documentation/dokugo/content/</loc>
-    <lastmod>2021-04-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://akutschi.github.io/dokugo/documentation/dokugo/introduction/</loc>
     <lastmod>2021-04-12T00:00:00+00:00</lastmod>

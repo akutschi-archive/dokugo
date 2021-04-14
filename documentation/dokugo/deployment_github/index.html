@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://akutschi.github.io/dokugo/css/custom.css">
   
   
-  <title>Installation and Deployment with GitHub | DoKugo</title>
+  <title>Deployment with GitHub | DoKugo</title>
 </head>
 
   <body class="d-flex flex-column">
@@ -93,7 +93,7 @@
     
         
         
-            <li class="breadcrumb-item active" aria-current="page">Installation and Deployment with GitHub</li>
+            <li class="breadcrumb-item active" aria-current="page">Deployment with GitHub</li>
         
     
     </ol>
@@ -102,7 +102,7 @@
 
 </nav>
 
-        <h1>Installation and Deployment with GitHub</h1>
+        <h1>Deployment with GitHub</h1>
         2021-04-13
         </br>
         
@@ -122,7 +122,7 @@
   <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/hugo">hugo</a>
   
   
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/installation">installation</a>
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/deployment">deployment</a>
   
   
   <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/github">github</a>
@@ -132,182 +132,26 @@
         <div class="row">
             <div class="col-12 col-md-9">
                 <br><br>
-                <p>In principal the same as in the <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation/">manual installation and deployment</a>, but we do not run <code>hugo</code> manually to create and publish the site.
+                <p>Here we are not running <code>hugo</code> manually to create and publish the site as in the <a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation/">manual deployment</a>.
 Instead we use <a href="https://docs.github.com/en/actions">GitHub Actions</a> and publish on <a href="https://docs.github.com/en/pages">GitHub Pages</a>.</p>
-<h2 id="requirements">Requirements</h2>
-<h3 id="hugo">Hugo</h3>
-<p>The required minimum Hugo version can be found on the <a href="https://github.com/akutschi/dokugo">DoKugo</a> site.
-To install Hugo, head to the <a href="https://github.com/gohugoio/hugo/releases">release site</a> and download the release for your Operating System and architecture.
-Hugo Extended is not required, but doesn&rsquo;t harm.</p>
-<p>If your are using Linux, it might be sufficient to install the version in your default repositories.
-In Ubuntu just use:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install hugo
-</code></pre></div><p>To check if the installation was successful with <code>hugo version</code>, you should get the following output:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo version
-Hugo Static Site Generator v0.80.0-792EF0F4/extended linux/amd64 BuildDate: 2020-12-31T13:46:18Z
-</code></pre></div><h3 id="git">Git</h3>
-<p>The next requirement is Git.
-Just go to the <a href="https://git-scm.com/downloads">Git site</a> and follow the instructions, they are straightforward.</p>
-<p>In the case of Linux the usage of the package manager is in most cases recommended.
-If you are using Ubuntu use:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install git
-</code></pre></div><p>Check your installation with <code>git version</code>.
-You should get the following result:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git version
-git version 2.25.1
-</code></pre></div><h2 id="install-dokugo">Install DoKugo</h2>
-<p>Basically you have to do this:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site demodokugo
-<span style="color:#b58900">cd</span> demodokugo
-git init
-git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
-</code></pre></div><p>With the first command <code>hugo new site demodokugo</code> you created a new site with the following directory structure:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/
-demodokugo/
-├── archetypes
-│   └── default.md
-├── config.toml      &lt;----- The configuration file
-├── content          &lt;----- Here goes your own content
-├── data
-├── layouts
-├── static
-└── themes
-</code></pre></div><p>With <code>cd demodokugo</code> you change the directory and <code>git init</code> initializes Git.
-The last command downloads and adds the DoKugo theme to your site.
-Running this command will have the following output:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
-Cloning into <span style="color:#2aa198">&#39;/home/arthurk/Documents/demodokugo/themes/dokugo&#39;</span>...
-remote: Enumerating objects: 463, <span style="color:#719e07">done</span>.
-remote: Counting objects: 100% <span style="color:#719e07">(</span>463/463<span style="color:#719e07">)</span>, <span style="color:#719e07">done</span>.
-remote: Compressing objects: 100% <span style="color:#719e07">(</span>203/203<span style="color:#719e07">)</span>, <span style="color:#719e07">done</span>.
-remote: Total <span style="color:#2aa198">1095</span> <span style="color:#719e07">(</span>delta 251<span style="color:#719e07">)</span>, reused <span style="color:#2aa198">395</span> <span style="color:#719e07">(</span>delta 213<span style="color:#719e07">)</span>, pack-reused <span style="color:#2aa198">632</span>
-Receiving objects: 100% <span style="color:#719e07">(</span>1095/1095<span style="color:#719e07">)</span>, 320.29 KiB | 4.39 MiB/s, <span style="color:#719e07">done</span>.
-Resolving deltas: 100% <span style="color:#719e07">(</span>562/562<span style="color:#719e07">)</span>, <span style="color:#719e07">done</span>.
-</code></pre></div><p>And the directory structure will look like the following one:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/ -d
-demodokugo/
-├── archetypes
-├── content
-├── data
-├── layouts
-├── static
-└── themes
-    └── dokugo          &lt;----- The submodule with the theme
-        ├── archetypes
-        ├── exampleSite
-        │   └── content
-        │       ├── blog
-        │       ├── documentation
-        │       │   └── dokugo
-        │       │       └── introduction
-        │       └── projects
-        ├── layouts
-        │   ├── _default
-        │   ├── partials
-        │   └── shortcodes
-        └── static
-            ├── css
-            ├── favicon
-            └── js
-</code></pre></div><h2 id="configuration">Configuration</h2>
-<p>It&rsquo;s time now to <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">configure</a> your site.</p>
-<p>We go the quick route.
-Just copy and paste the following into your <code>config.toml</code> in the root directory of your website.
-The only required change is the <code>baseURL</code>.
-Please, use the username and repository name where the page is stored:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">baseURL = &#34;https://username.github.io/repository&#34;
-languageCode = &#34;en-us&#34;
-title = &#34;DemoDoKugo&#34;
-theme = &#34;dokugo&#34;
-enableEmoji = true  
-
-
-[taxonomies]
-  tag = &#34;tags&#34;
-  category = &#34;categories&#34;
-
-[params]
-  homeText = &#34;Simplicity!&#34;
-  dateFormat = &#34;2006-01-02&#34;
-
-[params.footer]
-  footerText = &#34;This is a very simple and clean theme for documentation purposes. Main goal is a layout that does not distract the reader and can be navigated easily.&#34;  
-  github = &#34;https://github.com/username/repository&#34;
-  gitlab = &#34;https://gitlab.com/username/repository&#34;
-  <span style="color:#586e75"># This line enables (true) or disables (false) the &#34;Powered by Hugo. Theme DoKugo.&#34; line.</span>
-  poweredByLine = true 
-
-[markup]
-  [markup.highlight]
-    lineNos = false
-    lineNumbersInTable = true
-    style = &#34;solarized-dark&#34;
-  [markup.tableOfContents]
-    endLevel = 6
-    ordered = false
-    startLevel = 2
-
-[menu]
-  [[menu.main]]
-    name = &#34;Blog&#34;
-    url = &#34;/blog/&#34;
-    weight = 1
-  [[menu.main]]
-    name = &#34;Projects&#34;
-    url = &#34;/projects/&#34;
-    weight = 2
-   [[menu.main]]
-    name = &#34;Documentation&#34;
-    url = &#34;/documentation/&#34;
-    weight = 3
-</code></pre></div><p>A more detailed explanation about the configuration can be found <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">here</a>.</p>
-<h2 id="content">Content</h2>
-<p>Now, add some <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/">content</a> and when you think you&rsquo;re ready you can check with the command <code>hugo server</code>:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo server
-Start building sites … 
-
-                   | EN  
--------------------+-----
-  Pages            |  <span style="color:#2aa198">7</span>  
-  Paginator pages  |  <span style="color:#2aa198">0</span>  
-  Non-page files   |  <span style="color:#2aa198">0</span>  
-  Static files     |  <span style="color:#2aa198">9</span>  
-  Processed images |  <span style="color:#2aa198">0</span>  
-  Aliases          |  <span style="color:#2aa198">0</span>  
-  Sitemaps         |  <span style="color:#2aa198">1</span>  
-  Cleaned          |  <span style="color:#2aa198">0</span>  
-
-Built in <span style="color:#2aa198">5</span> ms
-Watching <span style="color:#719e07">for</span> changes in /home/hugo/Documents/demodokugo/<span style="color:#719e07">{</span>archetypes,content,data,layouts,static,themes<span style="color:#719e07">}</span>
-Watching <span style="color:#719e07">for</span> config changes in /home/hugo/Documents/demodokugo/config.toml
-Environment: <span style="color:#2aa198">&#34;development&#34;</span>
-Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-Web Server is available at http://localhost:1313/ <span style="color:#719e07">(</span><span style="color:#b58900">bind</span> address 127.0.0.1<span style="color:#719e07">)</span>
-Press Ctrl+C to stop
-</code></pre></div><p>This will start a small webserver and when you open <a href="http://localhost:1313/">http://localhost:1313/</a> in your web browser then you can see your website.
-Changes will be shown immediately.</p>
+<h2 id="configuration">Configuration</h2>
+<p>For a successful deployment we have to adjust the <code>config.toml</code>.
+Just replace the <code>baseURL</code> with the correct URL.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">baseURL = &#34;https://username.github.io/repository/
+</code></pre></div><p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites">Here</a> you find some information for different types of GitHub Pages sites.
+The type decides which <code>baseURL</code> you have to use.</p>
 <h2 id="deployment">Deployment</h2>
 <p>Since we want to use GitHub Pages for hosting our site in conjunction with GitHub Actions we have to create the file <code>.github/workflows/deploy.yml</code>.
-The directory structure is the - shortened - following one:</p>
+The directory structure is the following one:</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/ -a
 demodokugo/
-├── archetypes
-│   └── default.md
 ├── config.toml
 ├── content
-.
-.
-.
 ├── .github
 │   └── workflows
 │       └── deploy.yml      &lt;----- Configuration file <span style="color:#719e07">for</span> GitHub Actions
 ├── .gitmodules
-├── layouts
-├── public
-.
-.
-.
+└── public
 </code></pre></div><p>Now we have an empty GitHub Actions configuration file.
 Copy and paste the code into the <code>deploy.yml</code> file:</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#268bd2">name</span>: build &amp; deploy
@@ -371,7 +215,7 @@ The main points are:</p>
 Except the prohibited uses <a href="https://forum.gitlab.com/t/what-are-the-restrictions-for-gitlab-pages-sites/15067/6">they are more relaxed</a> when it&rsquo;s about using Pages.
 Especially the rules about commercial usage are less restrictive and the maximum size is 10 GB.
 Additionally they do not enforce a bandwidth limit nor a limit on builds per hour.</p>
-<p><a href="https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/">Here</a> you find the description to use GitLab Pages for your site.</p>
+<p><a href="https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/">Here</a> you find the description to use GitLab Pages for your site.</p>
 </blockquote>
 
             </div>
@@ -380,15 +224,7 @@ Additionally they do not enforce a bandwidth limit nor a limit on builds per hou
                 <div class="sticky-top">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#requirements">Requirements</a>
-      <ul>
-        <li><a href="#hugo">Hugo</a></li>
-        <li><a href="#git">Git</a></li>
-      </ul>
-    </li>
-    <li><a href="#install-dokugo">Install DoKugo</a></li>
     <li><a href="#configuration">Configuration</a></li>
-    <li><a href="#content">Content</a></li>
     <li><a href="#deployment">Deployment</a></li>
   </ul>
 </nav>

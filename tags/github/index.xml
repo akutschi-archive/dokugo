@@ -8,13 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation and Deployment with GitHub</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</link>
+      <title>Deployment with GitHub</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/</link>
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</guid>
-      <description>In principal the same as in the manual installation and deployment, but we do not run hugo manually to create and publish the site. Instead we use GitHub Actions and publish on GitHub Pages.
-Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.</description>
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/</guid>
+      <description>Here we are not running hugo manually to create and publish the site as in the manual deployment. Instead we use GitHub Actions and publish on GitHub Pages.
+Configuration For a successful deployment we have to adjust the config.toml. Just replace the baseURL with the correct URL.
+baseURL = &amp;#34;https://username.github.io/repository/ Here you find some information for different types of GitHub Pages sites. The type decides which baseURL you have to use.</description>
     </item>
     
   </channel>

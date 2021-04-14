@@ -8,34 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/installation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation and Deployment with GitHub</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation_github/</guid>
-      <description>In principal the same as in the manual installation and deployment, but we do not run hugo manually to create and publish the site. Instead we use GitHub Actions and publish on GitHub Pages.
-Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.</description>
-    </item>
-    
-    <item>
-      <title>Installation and Deployment with GitLab</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</guid>
-      <description>This is even simpler than the deployment with GitHub. It&amp;rsquo;s just one file in the project root to run GitLab CI/CD and to deploy on GitLab Pages.
-Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.
-If your are using Linux, it might be sufficient to install the version in your default repositories.</description>
-    </item>
-    
-    <item>
-      <title>Installation and Manual Deployment</title>
+      <title>Installation</title>
       <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</link>
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</guid>
-      <description>This guide will help you to install Hugo and DoKugo. You will be pointed to the documents to configure and create content for your site. Finally you create the static site and deploy it to your webhoster.
-Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.</description>
+      <description>This guide will help you to install Hugo and DoKugo. You will be pointed to the documents to configure and create content for your site. Finally you have to choose how to create the static site and to deploy it to the service of your choice.
+Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture.</description>
     </item>
     
   </channel>

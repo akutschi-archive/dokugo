@@ -8,14 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation and Deployment with GitLab</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</link>
+      <title>Deployment with GitLab</title>
+      <link>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/</link>
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation_gitlab/</guid>
+      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/deployment_gitlab/</guid>
       <description>This is even simpler than the deployment with GitHub. It&amp;rsquo;s just one file in the project root to run GitLab CI/CD and to deploy on GitLab Pages.
-Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.
-If your are using Linux, it might be sufficient to install the version in your default repositories.</description>
+Configuration For a successful deployment we have to adjust the config.toml. Just replace the baseURL with the correct URL.
+baseURL = &amp;#34;https://username.gitlab.io/repository/ Here you find some information for the different domain names for GitLab Pages. The type decides which baseURL you have to use.</description>
     </item>
     
   </channel>

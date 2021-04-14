@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://akutschi.github.io/dokugo/css/custom.css">
   
   
-  <title>Content Creation and Organization | DoKugo</title>
+  <title>Deployment with GitLab | DoKugo</title>
 </head>
 
   <body class="d-flex flex-column">
@@ -93,7 +93,7 @@
     
         
         
-            <li class="breadcrumb-item active" aria-current="page">Content Creation and Organization</li>
+            <li class="breadcrumb-item active" aria-current="page">Deployment with GitLab</li>
         
     
     </ol>
@@ -102,8 +102,8 @@
 
 </nav>
 
-        <h1>Content Creation and Organization</h1>
-        2021-04-14
+        <h1>Deployment with GitLab</h1>
+        2021-04-13
         </br>
         
   
@@ -119,94 +119,62 @@
   <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/documentation">documentation</a>
   
   
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/themes">themes</a>
-  
-  
   <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/hugo">hugo</a>
   
   
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/content">content</a>
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/deployment">deployment</a>
+  
+  
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/gitlab">gitlab</a>
   
 
 
         <div class="row">
             <div class="col-12 col-md-9">
                 <br><br>
-                <h2 id="default-folders">Default Folders</h2>
-<p>The basic idea is that your <code>content</code> folder has three subfolders, the section folders:</p>
-<ul>
-<li><code>blog</code> for blog articles,</li>
-<li><code>documentation</code> for the content of several topics and</li>
-<li><code>projects</code> for the description of projects.</li>
-</ul>
-<p>Each folder can contain other folders.
-For example, the project folder can have folders for a Raspberry Pi cluster project, a home cinema project and an art project.
-Each project folder can contain multiple articles written in Markdown.</p>
-<h3 id="_indexmd-file">_index.md File</h3>
-<p>The <code>_index.md</code> file is crucial for the structure of the site.
-This file adds front matter and content to the list pages.
-Every section folder that contains an <code>_index.md</code> file will list all articles and and other sections that are direct beneath it.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-<span style="color:#268bd2">title</span>: This is an awesome theme
-<span style="color:#268bd2">categories_weight</span>: <span style="color:#2aa198">1</span>
----
-</code></pre></div><p>The official documentation has more information on this <a href="https://gohugo.io/content-management/organization/#index-pages-_indexmd">topic</a>.</p>
-<h3 id="other-folders">Other Folders</h3>
-<p>If you decide that you don&rsquo;t want to have the above mentioned section folders, but</p>
-<ul>
-<li><code>blog</code>,</li>
-<li><code>pianos</code>,</li>
-<li><code>travel</code> and</li>
-<li><code>gardening</code></li>
-</ul>
-<p>then go ahead an create these folders in the content folder.
-But remember to create and to edit the <code>_index.md</code> in each folder.</p>
-<p>Additionally you have to <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/#menu">modify the menu</a> in the <code>config.toml</code>.
-A menu in the <code>config.toml</code> that replaces the default one with the new folders could look like the following:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">[menu]
-  [[menu.main]]
-    name = &#34;Blog&#34;
-    url = &#34;/blog/&#34;
-    weight = 1
-  [[menu.main]]
-    name = &#34;Pianos&#34;
-    url = &#34;/pianos/&#34;
-    weight = 2
-   [[menu.main]]
-    name = &#34;Travel&#34;
-    url = &#34;/travel/&#34;
-    weight = 3
-  [[menu.main]]
-    name = &#34;Gardening&#34;
-    url = &#34;/gardening/&#34;
-    weight = 4
-</code></pre></div><h2 id="articles">Articles</h2>
-<p>The official <a href="https://gohugo.io/content-management/organization/">documentation</a> has a lot of information how to organize your content.</p>
-<p>Recommended is the use of page bundles.
-Page bundles are folders that contain an <code>index.md</code> and all page related content like images, pdf documents and other files.
-To create a new page as page bundle use the following command:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new blog/dokugo-is-awesome/index.md
-</code></pre></div><p>This command will create the <code>blog</code> folder if not already created and a folder with the name <code>dokugo-is-awesome</code>.
-The latter folder has a file <code>index.md</code> where the article will be written.
-When you open this file you will see just the so called front matter:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---
-title: &#34;Dokugo Is Awesome&#34;
-date: 2021-04-13T22:11:28-04:00
-categories:
-    <span style="color:#719e07">-</span> blog
-categories_weight: 0
-tags:
-    <span style="color:#719e07">-</span> news
-draft: true
----
+                <p>This is even simpler than the deployment with <a href="https://akutschi.github.io/dokugo/documentation/dokugo/deployment_github/">GitHub</a>.
+It&rsquo;s just one file in the project root to run <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a> and to deploy on <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>.</p>
+<h2 id="configuration">Configuration</h2>
+<p>For a successful deployment we have to adjust the <code>config.toml</code>.
+Just replace the <code>baseURL</code> with the correct URL.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">baseURL = &#34;https://username.gitlab.io/repository/
+</code></pre></div><p><a href="https://docs.gitlab.com/ee/user/project/pages/getting_started_part_one.html#gitlab-pages-default-domain-names">Here</a> you find some information for the different domain names for GitLab Pages.
+The type decides which <code>baseURL</code> you have to use.</p>
+<h2 id="deployment">Deployment</h2>
+<p>Since we want to use GitLab Pages for hosting our site in conjunction with GitLab CI/CD we have to create the file <code>.gitlab-ci.yml</code>.
+The directory structure is the following one:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/ -a
+demodokugo/
+├── config.toml
+├── content
+├── .gitlab-ci.yml      &lt;----- Configuration file <span style="color:#719e07">for</span> GitHub Actions
+├── .gitmodules
+└── public
+</code></pre></div><p>Now we have an empty GitLab CI/CD configuration file.
+Copy and paste the code into the <code>deploy.yml</code> file:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#268bd2">image</span>: registry.gitlab.com/pages/hugo:latest
 
-Content
-</code></pre></div><p>You can change and add more categories as well as more tags.
-The weight of the articles can also be adjusted.
-A lower weight moves the article more to the top or to the left and a higher weight moves the article to the bottom or to the right.</p>
-<p>Read the <a href="https://akutschi.github.io/dokugo/documentation/">documentation</a> to learn how to write in Markdown.
-Especially the article about the <a href="https://akutschi.github.io/dokugo/documentation/markdown-syntax/">Markdown syntax</a> is very helpful to start writing in Markdown.
-It&rsquo;s very easy and straightforward.</p>
+<span style="color:#268bd2">variables</span>:
+  <span style="color:#268bd2">GIT_SUBMODULE_STRATEGY</span>: recursive
+
+<span style="color:#268bd2">pages</span>:
+  <span style="color:#268bd2">script</span>:
+    - hugo
+  <span style="color:#268bd2">artifacts</span>:
+    <span style="color:#268bd2">paths</span>:
+      - public
+  <span style="color:#268bd2">only</span>:
+    - master
+</code></pre></div><p>Now you can commit and push everything to your GitHub repository.
+The steps are:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add .
+git commit -m <span style="color:#2aa198">&#34;Initial commit&#34;</span>
+git branch -M main
+git remote add origin git@gitlab.com:username/repository.git
+git push -u origin main
+</code></pre></div><p>The last step will send everything to the GitLab repository.
+When you go to GitLab and open <code>CI/CD</code> then you will see that the building and deploy process is started.
+After a successful finish the site will be available under the address <a href="https://username.gitlab.io/repository">https://username.gitlab.io/repository</a>.</p>
 
             </div>
             <div class="d-none d-md-block col-md-3">
@@ -214,13 +182,8 @@ It&rsquo;s very easy and straightforward.</p>
                 <div class="sticky-top">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#default-folders">Default Folders</a>
-      <ul>
-        <li><a href="#_indexmd-file">_index.md File</a></li>
-        <li><a href="#other-folders">Other Folders</a></li>
-      </ul>
-    </li>
-    <li><a href="#articles">Articles</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#deployment">Deployment</a></li>
   </ul>
 </nav>
                 </div>
