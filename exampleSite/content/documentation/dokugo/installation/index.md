@@ -65,30 +65,24 @@ git version 2.25.1
 Basically you have to do this:
 
 ```bash
-hugo new site demodokugo
+mkdir -p demodokugo/content
 cd demodokugo
 git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
 ```
 
-With these first command `hugo new site demodokugo` you created a new site with the following directory structure:
+With the first command `mkdir -p demodokugo/content` you just created the folders for the content of a new site.
+The directory structure is quite simple:
 
 ```bash
 $ tree demodokugo/
 demodokugo/
-├── archetypes
-│   └── default.md
-├── config.toml      <----- The configuration file
-├── content          <----- Here goes your own content
-├── data
-├── layouts
-├── static
-└── themes
+└── content          <----- Here goes your own content
 ```
 
 With `cd demodokugo` you change the directory and `git init` initializes Git.
 The last command downloads and adds the DoKugo theme to your site.
-Running this command will have the following output:
+Running this command will generate the following output:
 
 ```bash 
 $ git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
@@ -106,11 +100,7 @@ And the directory structure will look like the following one:
 ```bash
 $ tree demodokugo/ -d
 demodokugo/
-├── archetypes
 ├── content
-├── data
-├── layouts
-├── static
 └── themes
     └── dokugo          <----- The submodule with the theme
         ├── archetypes
@@ -186,6 +176,16 @@ enableEmoji = true
     weight = 3
 ```
 
+The directory structure should look like the following one:
+
+```bash
+$ tree demodokugo/
+demodokugo/
+├── config.toml      <----- The configuration file
+├── content          <----- Here goes your own content
+└── themes
+```
+
 A more detailed explanation about the configuration can be found [here]({{< ref "../configuration/index.md" >}}).
 
 ## Content
@@ -247,14 +247,9 @@ This command will create the `public` folder inside your project root.
 ```bash
 $ tree demodokugo/ -L 1
 demodokugo/
-├── archetypes
 ├── config.toml
 ├── content
-├── data
-├── layouts
 ├── public      <----- Your generated content
-├── resources
-├── static
 └── themes
 ```
 

@@ -50,13 +50,13 @@ Browse site on [http://localhost:1313/dokugo](http://localhost:1313/dokugo).
 Basically you have to do this:
 
 ```bash
-hugo new site <sitename>
+mkdir -p <SITENAME>/content
 cd <sitename>
 git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
 ```
 
-Add some content and run
+Configure, add some content and run
 
 ```bash
 $ hugo 

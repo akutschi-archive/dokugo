@@ -65,30 +65,24 @@ git version 2.25.1
 Basically you have to do this:
 
 ```bash
-hugo new site demodokugo
+mkdir -p demodokugo/content
 cd demodokugo
 git init
 git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
 ```
 
-With these first command `hugo new site demodokugo` you created a new site with the following directory structure:
+With the first command `mkdir -p demodokugo/content` you just created the folders for the content of a new site.
+The directory structure is quite simple:
 
 ```bash
 $ tree demodokugo/
 demodokugo/
-├── archetypes
-│   └── default.md
-├── config.toml      <----- The configuration file
-├── content          <----- Here goes your own content
-├── data
-├── layouts
-├── static
-└── themes
+└── content          <----- Here goes your own content
 ```
 
 With `cd demodokugo` you change the directory and `git init` initializes Git.
 The last command downloads and adds the DoKugo theme to your site.
-Running this command will have the following output:
+Running this command will generate the following output:
 
 ```bash 
 $ git submodule add git@github.com:akutschi/dokugo.git themes/dokugo
@@ -106,11 +100,7 @@ And the directory structure will look like the following one:
 ```bash
 $ tree demodokugo/ -d
 demodokugo/
-├── archetypes
 ├── content
-├── data
-├── layouts
-├── static
 └── themes
     └── dokugo          <----- The submodule with the theme
         ├── archetypes
@@ -136,12 +126,10 @@ demodokugo/
 It's time now to [configure]({{< ref "../configuration/index.md" >}}) your site.
 
 We go the quick route.
-Just copy and paste the following into your `config.toml` in the root directory of your website.
-The only required change is the `baseURL`.
-Please, use the username and repository name where the page is stored:
+Just copy and paste the following into your `config.toml` in the root directory of your website:
 
 ```yaml
-baseURL = "https://username.gitlab.io/repository"
+baseURL = "https://username.gitlab.io/repository/"
 languageCode = "en-us"
 title = "DemoDoKugo"
 theme = "dokugo"
@@ -188,6 +176,16 @@ enableEmoji = true
     weight = 3
 ```
 
+The directory structure should look like the following one:
+
+```bash
+$ tree demodokugo/
+demodokugo/
+├── config.toml      <----- The configuration file
+├── content          <----- Here goes your own content
+└── themes
+```
+
 A more detailed explanation about the configuration can be found [here]({{< ref "../configuration/index.md" >}}).
 
 ## Content
@@ -225,25 +223,16 @@ Changes will be shown immediately.
 ## Deployment
 
 Since we want to use GitLab Pages for hosting our site in conjunction with GitLab CI/CD we have to create the file `.gitlab-ci.yml`. 
-The directory structure is the - shortened - following one:
+The directory structure is the following one:
 
 ```bash
 $ tree demodokugo/ -a
 demodokugo/
-├── archetypes
-│   └── default.md
 ├── config.toml
 ├── content
-.
-.
-.
 ├── .gitlab-ci.yml      <----- Configuration file for GitHub Actions
 ├── .gitmodules
-├── layouts
-├── public
-.
-.
-.
+└── public
 ```
 
 Now we have an empty GitLab CI/CD configuration file.
