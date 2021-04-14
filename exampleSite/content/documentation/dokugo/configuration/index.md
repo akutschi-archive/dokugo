@@ -163,7 +163,9 @@ Here you can modify the menus.
 
 In the moment there is just one menu.
 The one at the top of the site.
-The current configuration represents in the moment the subfolders in the `content` directory.
+The current menu entries are representing the subfolders in the `content` directory.
+These subfolders have to be created manually.
+
 Go [here](({{< ref "../content/index.md" >}})) for more details and how to create and manage content.
 
 If you want to add a menu entry at the top just add the following snippet below the `[menu]` section.
