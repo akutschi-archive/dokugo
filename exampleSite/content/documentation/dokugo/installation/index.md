@@ -1,7 +1,7 @@
 ---
 author: DoKugo
-title: Installation and Manual Deployment
-description: Simple installation with manual deployment
+title: Installation
+description: Simple installation of Hugo and DoKugo theme
 date: 2021-04-13
 categories:
     - dokugo
@@ -16,7 +16,7 @@ draft: false
 
 This guide will help you to install Hugo and DoKugo. 
 You will be pointed to the documents to configure and create content for your site.
-Finally you create the static site and deploy it to your webhoster.
+Finally you have to choose how to create the static site and to deploy it to the service of your choice.
 
 ## Requirements
 
@@ -222,39 +222,8 @@ Changes will be shown immediately.
 
 ## Deployment
 
-Now, when you think you're ready to publish something just run `hugo`:
+This guide explains three possibilities to deploy your site:
 
-```bash
-$ hugo 
-Start building sites … 
-
-                   | EN  
--------------------+-----
-  Pages            |  7  
-  Paginator pages  |  0  
-  Non-page files   |  0  
-  Static files     |  9  
-  Processed images |  0  
-  Aliases          |  0  
-  Sitemaps         |  1  
-  Cleaned          |  0  
-
-Total in 14 ms
-```
-
-This command will create the `public` folder inside your project root. 
-
-```bash
-$ tree demodokugo/ -L 1
-demodokugo/
-├── config.toml
-├── content
-├── public      <----- Your generated content
-└── themes
-```
-
-There are now dozen of possibilities how to publish the site and it is impossible to cover them all.
-Best of all, head to your webhoster and check their documentation how to upload your website to the webserver.
-Sometimes there is a web interface where you can drag and drop your files to publish them.
-
-Basically, copy the content of the `public` directory to the server that publishes your page.
+- [Manual deployment]({{< ref "../deployment_manual/index.md" >}})
+- [GitHub]({{< ref "../deployment_github/index.md" >}}) Actions and Pages
+- [GitLab]({{< ref "../deployment_gitlab/index.md" >}}) CI/CD and Pages
