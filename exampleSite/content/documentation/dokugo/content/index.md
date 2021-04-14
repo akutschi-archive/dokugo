@@ -11,7 +11,7 @@ tags:
     - documentation
     - themes
     - hugo
-    - installation
+    - content
 draft: false
 ---
 
