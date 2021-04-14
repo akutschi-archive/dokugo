@@ -98,5 +98,5 @@ Details about the configuration can be found [here]({{< ref "../configuration/in
 
 Basically put your content as `markdown` files into the `content` folder. You can also create there subfolders to structure your publications. 
 
-[Here](({{< ref "../content/index.md" >}})) are more details.
+[Here]({{< ref "../content/index.md" >}}) are more details.
 
