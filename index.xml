@@ -44,7 +44,8 @@ Requirements Hugo The required minimum Hugo version can be found on the DoKugo s
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/documentation/dokugo/configuration/</guid>
-      <description></description>
+      <description>Now it&amp;rsquo;s time to configure your site. The configuration is done in the config.toml file. This file is located in the root of your Hugo project. After running hugo new site demodokugo your directory and file structure should look like the following one:
+$ tree demodokugo/ demodokugo/ ├── archetypes │ └── default.md ├── config.toml &amp;lt;----- The configuration file ├── content ├── data ├── layouts ├── static └── themes Overview The whole config.</description>
     </item>
     
     <item>
@@ -53,7 +54,8 @@ Requirements Hugo The required minimum Hugo version can be found on the DoKugo s
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://akutschi.github.io/dokugo/documentation/dokugo/content/</guid>
-      <description></description>
+      <description>Default Folders The basic idea is that your content folder has three subfolders:
+ blog for blog articles, documentation for the content of several topics and projects for the description of projects.  Each folder itself can contain other folders. For example, the project folder can have folders for a Raspberry Pi cluster project, a home cinema project and an art project. Each project folder can contain multiple articles written in Markdown.</description>
     </item>
     
     <item>

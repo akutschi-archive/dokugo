@@ -125,19 +125,96 @@
   <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/hugo">hugo</a>
   
   
-  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/installation">installation</a>
+  <a class="btn btn-sm btn-outline-success tag-btn" href="https://akutschi.github.io/dokugo/tags/content">content</a>
   
 
 
         <div class="row">
             <div class="col-12 col-md-9">
                 <br><br>
-                
+                <h2 id="default-folders">Default Folders</h2>
+<p>The basic idea is that your <code>content</code> folder has three subfolders:</p>
+<ul>
+<li><code>blog</code> for blog articles,</li>
+<li><code>documentation</code> for the content of several topics and</li>
+<li><code>projects</code> for the description of projects.</li>
+</ul>
+<p>Each folder itself can contain other folders.
+For example, the project folder can have folders for a Raspberry Pi cluster project, a home cinema project and an art project.
+Each project folder can contain multiple articles written in Markdown.</p>
+<h3 id="other-folders">Other Folders</h3>
+<p>If you decide that you don&rsquo;t want to have the above mentioned folders, but</p>
+<ul>
+<li><code>blog</code>,</li>
+<li><code>pianos</code>,</li>
+<li><code>travel</code> and</li>
+<li><code>gardening</code></li>
+</ul>
+<p>then go ahead an create these folders in the content folder.
+It might be necessary to delete <code>default.md</code> in your <code>archetypes</code> folder.
+This folder can be found in the root directory of your page.
+The reason for this deletion is that the default archetype does not contain all data that are required for this theme.</p>
+<p>Additionally you have to <a href="https://akutschi.github.io/dokugo/documentation/dokugo/configuration/#menu">modify the menu</a> in the <code>config.toml</code>.
+A menu in the <code>config.toml</code> that replaces the default one with the new folders could look like the following:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">[menu]
+  [[menu.main]]
+    name = &#34;Blog&#34;
+    url = &#34;/blog/&#34;
+    weight = 1
+  [[menu.main]]
+    name = &#34;Pianos&#34;
+    url = &#34;/pianos/&#34;
+    weight = 2
+   [[menu.main]]
+    name = &#34;Travel&#34;
+    url = &#34;/travel/&#34;
+    weight = 3
+  [[menu.main]]
+    name = &#34;Gardening&#34;
+    url = &#34;/gardening/&#34;
+    weight = 4
+</code></pre></div><h2 id="articles">Articles</h2>
+<p>The official <a href="https://gohugo.io/content-management/organization/">documentation</a> has a lot of information how to organize your content.</p>
+<p>Recommended is the use of page bundles.
+Page bundles are folders that contain an <code>index.md</code> and all page related content like images, pdf documents and other files.
+To create a new page as page bundle use the following command:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new blog/dokugo-is-awesome/index.md
+</code></pre></div><p>This command will create the <code>blog</code> folder if not already created and a folder with the name <code>dokugo-is-awesome</code>.
+The latter folder has a file <code>index.md</code> where the article will be written.
+When you open this file you will see just the so called frontmatter:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">---
+title: &#34;Dokugo Is Awesome&#34;
+date: 2021-04-13T22:11:28-04:00
+categories:
+    <span style="color:#719e07">-</span> blog
+categories_weight: 0
+tags:
+    <span style="color:#719e07">-</span> news
+draft: true
+---
+
+Content
+</code></pre></div><p>You can change and add more categories as well as more tags.
+The weight of the articles can also be adjusted.
+A lower weight moves the article more to the top or to the left and a higher weight moves the article to the bottom or to the right.</p>
+<p>Read the <a href="https://akutschi.github.io/dokugo/documentation/">documentation</a> to learn how to write in Markdown.
+Especially the article about the <a href="https://akutschi.github.io/dokugo/documentation/markdown-syntax/">Markdown syntax</a> is very helpful to start writing in Markdown.
+It&rsquo;s very easy and straightforward.</p>
+
             </div>
             <div class="d-none d-md-block col-md-3">
                 <br><br>
                 <div class="sticky-top">
-                <nav id="TableOfContents"></nav>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#default-folders">Default Folders</a>
+      <ul>
+        <li><a href="#other-folders">Other Folders</a></li>
+      </ul>
+    </li>
+    <li><a href="#articles">Articles</a></li>
+  </ul>
+</nav>
                 </div>
             </div>
         </div>

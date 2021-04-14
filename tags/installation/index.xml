@@ -38,14 +38,5 @@ If your are using Linux, it might be sufficient to install the version in your d
 Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture. Hugo Extended is not required, but doesn&amp;rsquo;t harm.</description>
     </item>
     
-    <item>
-      <title>Content Creation and Organization</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/content/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/content/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

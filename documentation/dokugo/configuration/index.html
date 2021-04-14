@@ -129,12 +129,231 @@
         <div class="row">
             <div class="col-12 col-md-9">
                 <br><br>
-                
+                <p>Now it&rsquo;s time to configure your site.
+The configuration is done in the <code>config.toml</code> file.
+This file is located in the root of your Hugo project.
+After running <code>hugo new site demodokugo</code> your directory and file structure should look like the following one:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree demodokugo/
+demodokugo/
+├── archetypes
+│   └── default.md
+├── config.toml      &lt;----- The configuration file
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre></div><h2 id="overview">Overview</h2>
+<p>The whole <code>config.toml</code> file is the following one:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">baseURL = &#34;https://www.example.com&#34;
+languageCode = &#34;en-us&#34;
+title = &#34;DemoDoKugo&#34;
+theme = &#34;dokugo&#34;
+enableEmoji = true  
+
+
+[taxonomies]
+  tag = &#34;tags&#34;
+  category = &#34;categories&#34;
+
+[params]
+  homeText = &#34;Simplicity!&#34;
+  dateFormat = &#34;2006-01-02&#34;
+
+[params.footer]
+  footerText = &#34;This is a very simple and clean theme for documentation purposes. Main goal is a layout that does not distract the reader and can be navigated easily.&#34;  
+  github = &#34;https://github.com/username/repository&#34;
+  gitlab = &#34;https://gitlab.com/username/repository&#34;
+  <span style="color:#586e75"># This line enables (true) or disables (false) the &#34;Powered by Hugo. Theme DoKugo.&#34; line.</span>
+  poweredByLine = true 
+
+[markup]
+  [markup.highlight]
+    lineNos = false
+    lineNumbersInTable = true
+    style = &#34;solarized-dark&#34;
+  [markup.tableOfContents]
+    endLevel = 6
+    ordered = false
+    startLevel = 2
+
+[menu]
+  [[menu.main]]
+    name = &#34;Blog&#34;
+    url = &#34;/blog/&#34;
+    weight = 1
+  [[menu.main]]
+    name = &#34;Projects&#34;
+    url = &#34;/projects/&#34;
+    weight = 2
+   [[menu.main]]
+    name = &#34;Documentation&#34;
+    url = &#34;/documentation/&#34;
+    weight = 3
+</code></pre></div><p>Now we go through the configuration file section by section.</p>
+<h3 id="general">General</h3>
+<p>All options for this section can be found in the <a href="https://gohugo.io/getting-started/configuration/">Hugo documentation</a>.</p>
+<p>Here we use just a few, but feel free to use as much as you need.</p>
+<ul>
+<li><code>baseURL</code>
+<ul>
+<li>This is the address where the site will be available. If you are using GitLab Pages then it must be something like <code>https://username.gitlab.io</code> or <code>https://username.gitlab.io/repository</code>.</li>
+</ul>
+</li>
+<li><code>languageCode</code>
+<ul>
+<li>This is the default language for the site.</li>
+<li>Currently, this theme does not support multi-language sites.</li>
+</ul>
+</li>
+<li><code>title</code>
+<ul>
+<li>The title of the page.</li>
+</ul>
+</li>
+<li><code>theme</code>
+<ul>
+<li>Here you can set the theme.</li>
+<li>Since you are reading this documentation the theme is <code>dokugo</code>.</li>
+</ul>
+</li>
+<li><code>enableEmoji</code>
+<ul>
+<li>The setting enables emoticons.</li>
+</ul>
+</li>
+</ul>
+<h3 id="taxonomies">Taxonomies</h3>
+<p>Taxonomies allow grouping of content.
+The <a href="hhttps://gohugo.io/content-management/taxonomies#configure-taxonomies">Hugo documentation</a> shows how taxonomies can be configured.</p>
+<p>Here only <code>tags</code> and <code>category</code> are used for grouping. Usually you can ignore this section.</p>
+<h3 id="params">Params</h3>
+<p>Values in this section will populate the <code>.Site.Params</code> variable and can be used in templates.</p>
+<h3 id="paramsfooter">Params.Footer</h3>
+<p>This section lists the parameters that will be used in the site footer.</p>
+<ul>
+<li><code>footerText</code>
+<ul>
+<li>The text appears that will be shown in the about section of the footer.</li>
+</ul>
+</li>
+<li><code>github</code> and <code>gitlab</code>
+<ul>
+<li>Links to GitHub and GitLab.</li>
+<li>The icons only appear when the parameters are defined.</li>
+<li>There can be added more like Twitter or LinkedIn, just request your service via <a href="https://github.com/akutschi/dokugo/issues/new">ticket</a>.</li>
+</ul>
+</li>
+<li><code>poweredByLine</code>
+<ul>
+<li>This shows `Powered by Hugo. Theme DoKugo.</li>
+<li><strong>Would be nice if this setting stays unchanged</strong>, but it&rsquo;s your choice.</li>
+<li>Set to false if want to get rid of this line.</li>
+</ul>
+</li>
+</ul>
+<h3 id="markup">Markup</h3>
+<p>This section is about how to handle Markdown and other markup related stuff.
+See <a href="https://gohugo.io/getting-started/configuration-markup">Hugo documentation</a>.</p>
+<h4 id="markuphighlight">Markup.Highlight</h4>
+<p>This section affects the <a href="https://gohugo.io/getting-started/configuration-markup#highlight">syntax highlighting</a>.</p>
+<ul>
+<li><code>lineNos</code>
+<ul>
+<li>This disables the line numbers.</li>
+<li>Enable with <code>true</code>.</li>
+</ul>
+</li>
+<li><code>lineNumbersInTable</code>
+<ul>
+<li>This defined how line numbers are shown.</li>
+</ul>
+</li>
+<li><code>style</code>
+<ul>
+<li>This is the theme of the syntax highlighting.</li>
+<li>Here is a <a href="https://xyproto.github.io/splash/docs/all.html">Gallery</a> of themes for syntax highlighting.</li>
+</ul>
+</li>
+</ul>
+<h4 id="markuptableofcontents">Markup.TableOfContents</h4>
+<p>This setting influences the table of content.</p>
+<ul>
+<li><code>endLevel</code>
+<ul>
+<li>This sets the end where rendering of the ToC stops.</li>
+</ul>
+</li>
+<li><code>ordered</code>
+<ul>
+<li>Whether or not to generate an ordered list instead of an unordered list.</li>
+</ul>
+</li>
+<li><code>startLevel</code>
+<ul>
+<li>This sets the beginning where rendering of the ToC starts.</li>
+</ul>
+</li>
+</ul>
+<h3 id="menu">Menu</h3>
+<p>Here you can modify the menus.</p>
+<h4 id="menumain">Menu.Main</h4>
+<p>In the moment there is just one menu.
+The one at the top of the site.
+The current menu entries are representing the subfolders in the <code>content</code> directory.
+These subfolders have to be created manually.</p>
+<p>Go <a href="(https://akutschi.github.io/dokugo/documentation/dokugo/content/)">here</a> for more details and how to create and manage content.</p>
+<p>If you want to add a menu entry at the top just add the following snippet below the <code>[menu]</code> section.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">[[menu.main]]
+    name = &#34;Blog&#34;
+    url = &#34;/blog/&#34;
+    weight = 1
+</code></pre></div><ul>
+<li><code>name</code>
+<ul>
+<li>The name of the entry that will also be shown in the menu.</li>
+</ul>
+</li>
+<li><code>url</code>
+<ul>
+<li>The relative path, seen from the <code>content</code> folder.</li>
+</ul>
+</li>
+<li><code>weight</code>
+<ul>
+<li>The position of the entry.</li>
+<li>Lower values go to the left/top, higher values to the right/bottom.</li>
+</ul>
+</li>
+</ul>
+
             </div>
             <div class="d-none d-md-block col-md-3">
                 <br><br>
                 <div class="sticky-top">
-                <nav id="TableOfContents"></nav>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#general">General</a></li>
+        <li><a href="#taxonomies">Taxonomies</a></li>
+        <li><a href="#params">Params</a></li>
+        <li><a href="#paramsfooter">Params.Footer</a></li>
+        <li><a href="#markup">Markup</a>
+          <ul>
+            <li><a href="#markuphighlight">Markup.Highlight</a></li>
+            <li><a href="#markuptableofcontents">Markup.TableOfContents</a></li>
+          </ul>
+        </li>
+        <li><a href="#menu">Menu</a>
+          <ul>
+            <li><a href="#menumain">Menu.Main</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
             </div>
         </div>
