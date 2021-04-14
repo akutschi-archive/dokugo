@@ -2,10 +2,10 @@
 author: DoKugo
 title: Content Creation and Organization
 description: Create and organize content in Hugo and DoKugo
-date: 2021-04-12
+date: 2021-04-14
 categories:
     - dokugo
-categories_weight: 6
+categories_weight: 4
 tags:
     - themes
     - documentation
@@ -17,19 +17,34 @@ draft: false
 
 ## Default Folders
 
-The basic idea is that your `content` folder has three subfolders:
+The basic idea is that your `content` folder has three subfolders, the section folders:
 
 - `blog` for blog articles,
 - `documentation` for the content of several topics and
 - `projects` for the description of projects.
 
-Each folder itself can contain other folders.
+Each folder can contain other folders.
 For example, the project folder can have folders for a Raspberry Pi cluster project, a home cinema project and an art project.
 Each project folder can contain multiple articles written in Markdown.
 
+### _index.md File
+
+The `_index.md` file is crucial for the structure of the site.
+This file adds front matter and content to the list pages. 
+Every section folder that contains an `_index.md` file will list all articles and and other sections that are direct beneath it. 
+
+```yaml
+---
+title: This is an awesome theme
+categories_weight: 1
+---
+```
+
+The official documentation has more information on this [topic](https://gohugo.io/content-management/organization/#index-pages-_indexmd).
+
 ### Other Folders 
 
-If you decide that you don't want to have the above mentioned folders, but 
+If you decide that you don't want to have the above mentioned section folders, but 
 
 - `blog`,
 - `pianos`,
@@ -37,9 +52,7 @@ If you decide that you don't want to have the above mentioned folders, but
 - `gardening`
 
 then go ahead an create these folders in the content folder. 
-It might be necessary to delete `default.md` in your `archetypes` folder.
-This folder can be found in the root directory of your page.
-The reason for this deletion is that the default archetype does not contain all data that are required for this theme.
+But remember to create and to edit the `_index.md` in each folder.
 
 Additionally you have to [modify the menu]({{< ref "../configuration/index.md#menu" >}}) in the `config.toml`.
 A menu in the `config.toml` that replaces the default one with the new folders could look like the following:
@@ -78,7 +91,7 @@ hugo new blog/dokugo-is-awesome/index.md
 
 This command will create the `blog` folder if not already created and a folder with the name `dokugo-is-awesome`.
 The latter folder has a file `index.md` where the article will be written. 
-When you open this file you will see just the so called frontmatter:
+When you open this file you will see just the so called front matter:
 
 ```md
 ---
