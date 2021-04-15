@@ -43,8 +43,7 @@ demodokugo/
 ├── .github
 │   └── workflows
 │       └── deploy.yml      <----- Configuration file for GitHub Actions
-├── .gitmodules
-└── public
+└── .gitmodules
 ```
 
 Now we have an empty GitHub Actions configuration file.

@@ -45,7 +45,7 @@ Hugo Static Site Generator v0.80.0-792EF0F4/extended linux/amd64 BuildDate: 2020
 The next requirement is Git.
 Just go to the [Git site](https://git-scm.com/downloads) and follow the instructions, they are straightforward. 
 
-In the case of Linux the usage of the package manager is in most cases recommended. 
+In the case of Linux the usage of the package manager is recommended in most cases. 
 If you are using Ubuntu use:
 
 ```bash
