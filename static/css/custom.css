@@ -7,6 +7,10 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 pre {
   padding: 20px;
 }
