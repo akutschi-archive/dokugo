@@ -7,6 +7,10 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 pre {
   padding: 20px;
 }
@@ -31,10 +35,6 @@ pre {
 #main {
   margin-top: 1em;
   margin-bottom: 4em;
-}
-
-#home-jumbotron {
-  background-color: inherit;
 }
 
 .font-125 {
@@ -134,7 +134,14 @@ blockquote {
 
 .footer-links a
 {
-  color:#737373
+  color:#737373;
+  text-decoration: none;
+}
+
+.footer-links a:hover
+{
+  color:#737373;
+  text-decoration: underline;
 }
 
 .social-icons
@@ -155,8 +162,8 @@ blockquote {
   width:40px;
   height:40px;
   line-height:40px;
-  margin-left:6px;
-  margin-right:0;
+  margin-left:3px;
+  margin-right:3px;
   border-radius:10%;
   background-color:#d3d3d3;
   color:#818a91;

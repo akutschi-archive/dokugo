@@ -5,7 +5,7 @@
     <h1>{{ .Title }}</h1>
     {{ range .Data.Terms.Alphabetical }}
       <a class="btn btn-outline-dark font-125 tagpage-space" href="{{ .Page.Permalink }}">
-        <span class="badge badge-dark">{{ .Count }}</span> {{ .Page.Title }}
+        <span class="badge bg-dark">{{ .Count }}</span> {{ .Page.Title }}
       </a>    
     {{ end }}
   </div>

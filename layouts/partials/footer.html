@@ -8,20 +8,24 @@
 
         <div class="col-sm-6 col-lg-2">
           <h6>Content</h6>
+          {{ if .Site.Params.Footer.Links.content }}
           <ul class="footer-links">
             {{ range sort .Site.Params.Footer.Links.content "weight" "asc" }} 
               <li><a href="{{ .url | relURL }}">{{ .name | safeHTML }}</a></li>
             {{ end }}
           </ul>
+          {{ end }}
         </div>
 
         <div class=" col-sm-6 col-lg-2">
           <h6>Quick Links</h6>
+          {{ if .Site.Params.Footer.Links.quick }}
           <ul class="footer-links">
             {{ range sort .Site.Params.Footer.Links.quick "weight" "asc" }} 
               <li><a href="{{ .url | relURL }}">{{ .name | safeHTML }}</a></li>
             {{ end }}
           </ul>
+          {{ end }}
         </div>
 
         <div class="d-none d-md-block col-lg-2">
@@ -33,7 +37,7 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <ul class="social-icons text-left">
+          <ul class="social-icons text-start">
             <li><a class="" href="http://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i></a></li>
             <li><a class="" href="http://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></li>
           </ul>
@@ -41,7 +45,7 @@
         </div>
 
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <ul class="social-icons text-right">
+          <ul class="social-icons text-end">
             {{ if .Site.Params.Footer.github }}<li><a class="" href="{{ .Site.Params.Footer.github }}"><i class="fab fa-github"></i></a></li>{{ end }}
             {{ if .Site.Params.Footer.gitlab }}<li><a class="" href="{{ .Site.Params.Footer.gitlab }}"><i class="fab fa-gitlab"></i></a></li>{{ end }}
           </ul>
@@ -54,9 +58,7 @@
 <div class="poweredby-footer">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="row justify-content-center">
-        <p class="footer-links">Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://akutschi.github.io/dokugo">DoKugo</a>.</p>
-      </div>
+        <p class="text-center footer-links">Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://akutschi.github.io/dokugo">DoKugo</a>.</p>
     </div>
   </div>
 {{ end }}
