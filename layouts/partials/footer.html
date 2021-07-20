@@ -9,20 +9,18 @@
         <div class="col-sm-6 col-lg-2">
           <h6>Content</h6>
           <ul class="footer-links">
-            <li><a href="{{ .Site.BaseURL }}documentation/">Blog</a></li>
-            <li><a href="{{ .Site.BaseURL }}projects/">Projects</a></li>
-            <li><a href="{{ .Site.BaseURL }}documentation/">Documentation</a></li>
-            <li><a href="{{ .Site.BaseURL }}categories/">Categories</a></li>
-            <li><a href="{{ .Site.BaseURL }}tags/">Tags</a></li>
+            {{ range sort .Site.Params.Footer.Links.content "weight" "asc" }} 
+              <li><a href="{{ .url | relURL }}">{{ .name | safeHTML }}</a></li>
+            {{ end }}
           </ul>
         </div>
 
         <div class=" col-sm-6 col-lg-2">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
-            <li><a href="{{ .Site.BaseURL }}contact/">Contact</a></li>
-            <li><a href="{{ .Site.BaseURL }}privacy-policy/">Privacy Policy</a></li>
+            {{ range sort .Site.Params.Footer.Links.quick "weight" "asc" }} 
+              <li><a href="{{ .url | relURL }}">{{ .name | safeHTML }}</a></li>
+            {{ end }}
           </ul>
         </div>
 
