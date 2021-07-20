@@ -130,7 +130,14 @@ blockquote {
 
 .footer-links a
 {
-  color:#737373
+  color:#737373;
+  text-decoration: none;
+}
+
+.footer-links a:hover
+{
+  color:#737373;
+  text-decoration: underline;
 }
 
 .social-icons
