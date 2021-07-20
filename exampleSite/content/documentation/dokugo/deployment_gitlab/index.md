@@ -41,8 +41,7 @@ demodokugo/
 ├── config.toml
 ├── content
 ├── .gitlab-ci.yml      <----- Configuration file for GitHub Actions
-├── .gitmodules
-└── public
+└── .gitmodules
 ```
 
 Now we have an empty GitLab CI/CD configuration file.
