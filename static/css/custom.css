@@ -7,6 +7,10 @@ body {
   height: 100%;
 }
 
+pre {
+  padding: 20px;
+}
+
 #page-content {
   flex: 1 0 auto;
 }
