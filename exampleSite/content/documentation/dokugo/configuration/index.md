@@ -54,6 +54,40 @@ enableEmoji = true
   # This line enables (true) or disables (false) the "Powered by Hugo. Theme DoKugo." line.
   poweredByLine = true 
 
+[params.footer.links]
+  [[params.footer.links.content]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[params.footer.links.content]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[params.footer.links.content]]
+    name = "Documentation"
+    url = "/documentation/"
+    weight = 3
+  [[params.footer.links.content]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 4
+  [[params.footer.links.content]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 5
+  [[params.footer.links.quick]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[params.footer.links.quick]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
+  [[params.footer.links.quick]]
+    name = "Privacy Policy"
+    url = "/privacy-policy/"
+    weight = 3
+
 [markup]
   [markup.highlight]
     lineNos = false
@@ -124,6 +158,25 @@ This section lists the parameters that will be used in the site footer.
     - This shows `Powered by Hugo. Theme DoKugo.
     - **Would be nice if this setting stays unchanged**, but it's your choice.
     - Set to false if want to get rid of this line.
+
+### Params.Footer.Links
+
+Here can be defined the links in the footer. 
+
+- `params.footer.links.content`
+    -  Links in the content section.
+- `params.footer.links.quick` 
+    - Links in the `Quick Links` section.
+
+The following snippet shows the general setup of a `Quick Link` in the footer. If a link for the content section should be added then just replace `params.footer.links.quick` with `params.footer.links.content`.
+
+```yaml
+[[params.footer.links.quick]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
+```
+
 ### Markup
 
 This section is about how to handle Markdown and other markup related stuff. 
