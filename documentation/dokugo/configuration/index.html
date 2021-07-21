@@ -164,6 +164,40 @@ enableEmoji = true
   <span style="color:#586e75"># This line enables (true) or disables (false) the &#34;Powered by Hugo. Theme DoKugo.&#34; line.</span>
   poweredByLine = true 
 
+[params.footer.links]
+  [[params.footer.links.content]]
+    name = &#34;Blog&#34;
+    url = &#34;/blog/&#34;
+    weight = 1
+  [[params.footer.links.content]]
+    name = &#34;Projects&#34;
+    url = &#34;/projects/&#34;
+    weight = 2
+  [[params.footer.links.content]]
+    name = &#34;Documentation&#34;
+    url = &#34;/documentation/&#34;
+    weight = 3
+  [[params.footer.links.content]]
+    name = &#34;Categories&#34;
+    url = &#34;/categories/&#34;
+    weight = 4
+  [[params.footer.links.content]]
+    name = &#34;Tags&#34;
+    url = &#34;/tags/&#34;
+    weight = 5
+  [[params.footer.links.quick]]
+    name = &#34;About&#34;
+    url = &#34;/about/&#34;
+    weight = 1
+  [[params.footer.links.quick]]
+    name = &#34;Contact&#34;
+    url = &#34;/contact/&#34;
+    weight = 2
+  [[params.footer.links.quick]]
+    name = &#34;Privacy Policy&#34;
+    url = &#34;/privacy-policy/&#34;
+    weight = 3
+
 [markup]
   [markup.highlight]
     lineNos = false
@@ -249,7 +283,26 @@ The <a href="hhttps://gohugo.io/content-management/taxonomies#configure-taxonomi
 </ul>
 </li>
 </ul>
-<h3 id="markup">Markup</h3>
+<h3 id="paramsfooterlinks">Params.Footer.Links</h3>
+<p>Here can be defined the links in the footer.</p>
+<ul>
+<li><code>params.footer.links.content</code>
+<ul>
+<li>Links in the content section.</li>
+</ul>
+</li>
+<li><code>params.footer.links.quick</code>
+<ul>
+<li>Links in the <code>Quick Links</code> section.</li>
+</ul>
+</li>
+</ul>
+<p>The following snippet shows the general setup of a <code>Quick Link</code> in the footer. If a link for the content section should be added then just replace <code>params.footer.links.quick</code> with <code>params.footer.links.content</code>.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">[[params.footer.links.quick]]
+    name = &#34;Contact&#34;
+    url = &#34;/contact/&#34;
+    weight = 2
+</code></pre></div><h3 id="markup">Markup</h3>
 <p>This section is about how to handle Markdown and other markup related stuff.
 See <a href="https://gohugo.io/getting-started/configuration-markup">Hugo documentation</a>.</p>
 <h4 id="markuphighlight">Markup.Highlight</h4>
@@ -336,6 +389,7 @@ These subfolders have to be created manually.</p>
         <li><a href="#taxonomies">Taxonomies</a></li>
         <li><a href="#params">Params</a></li>
         <li><a href="#paramsfooter">Params.Footer</a></li>
+        <li><a href="#paramsfooterlinks">Params.Footer.Links</a></li>
         <li><a href="#markup">Markup</a>
           <ul>
             <li><a href="#markuphighlight">Markup.Highlight</a></li>
