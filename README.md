@@ -97,8 +97,7 @@ The documentation can be found on the [demo site](https://akutschi.github.io/dok
 
 Problems? Feature requests? Improvements? 
 
-Probably, since this theme is currently optimized for my own personal use.
-Nevertheless, feel free to open tickets for issues or merge requests. 
+Although this theme is currently optimized for my personal use, feel free to open tickets for issues or merge requests. 
 I am happy to discuss and consider every request. 
 Thank you.
 
