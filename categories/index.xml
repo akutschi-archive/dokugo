@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on DoKugo</title>
-    <link>https://akutschi.github.io/dokugo/categories/</link>
+    <link>https://akutschi-archive.github.io/dokugo/categories/</link>
     <description>Recent content in Categories on DoKugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi-archive.github.io/dokugo/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dokugo</title>
-      <link>https://akutschi.github.io/dokugo/categories/dokugo/</link>
+      <link>https://akutschi-archive.github.io/dokugo/categories/dokugo/</link>
       <pubDate>Wed, 14 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/categories/dokugo/</guid>
+      <guid>https://akutschi-archive.github.io/dokugo/categories/dokugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://akutschi.github.io/dokugo/categories/blog/</link>
+      <link>https://akutschi-archive.github.io/dokugo/categories/blog/</link>
       <pubDate>Wed, 01 Apr 2020 11:11:13 -1100</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/categories/blog/</guid>
+      <guid>https://akutschi-archive.github.io/dokugo/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>documentation</title>
-      <link>https://akutschi.github.io/dokugo/categories/documentation/</link>
+      <link>https://akutschi-archive.github.io/dokugo/categories/documentation/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/categories/documentation/</guid>
+      <guid>https://akutschi-archive.github.io/dokugo/categories/documentation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>syntax</title>
-      <link>https://akutschi.github.io/dokugo/categories/syntax/</link>
+      <link>https://akutschi-archive.github.io/dokugo/categories/syntax/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/categories/syntax/</guid>
+      <guid>https://akutschi-archive.github.io/dokugo/categories/syntax/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://akutschi.github.io/dokugo/categories/themes/</link>
+      <link>https://akutschi-archive.github.io/dokugo/categories/themes/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/categories/themes/</guid>
+      <guid>https://akutschi-archive.github.io/dokugo/categories/themes/</guid>
       <description></description>
     </item>
     

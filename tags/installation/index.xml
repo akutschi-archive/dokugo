@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>installation on DoKugo</title>
-    <link>https://akutschi.github.io/dokugo/tags/installation/</link>
+    <link>https://akutschi-archive.github.io/dokugo/tags/installation/</link>
     <description>Recent content in installation on DoKugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi.github.io/dokugo/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://akutschi-archive.github.io/dokugo/tags/installation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
-      <link>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</link>
+      <link>https://akutschi-archive.github.io/dokugo/documentation/dokugo/installation/</link>
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://akutschi.github.io/dokugo/documentation/dokugo/installation/</guid>
+      <guid>https://akutschi-archive.github.io/dokugo/documentation/dokugo/installation/</guid>
       <description>This guide will help you to install Hugo and DoKugo. You will be pointed to the documents to configure and create content for your site. Finally you have to choose how to create the static site and to deploy it to the service of your choice.
 Requirements Hugo The required minimum Hugo version can be found on the DoKugo site. To install Hugo, head to the release site and download the release for your Operating System and architecture.</description>
     </item>
